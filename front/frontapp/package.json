@@ -1,5 +1,6 @@
 {
-  "name": "frontapp",
+  "start": "ng serve --proxy-config proxy.config.json",
+  "name": "portal-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -44,4 +45,5 @@
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
   }
+
 }

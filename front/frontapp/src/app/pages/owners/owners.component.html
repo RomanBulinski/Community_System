@@ -1,0 +1,21 @@
+<div class="col-md-6">
+  <h2> Owners from front</h2>
+
+  <table class="table table-striped">
+
+    <tr>
+      <th class="hidden">Id</th>
+      <th>Name</th>
+      <th>Surname</th>
+    </tr>
+
+    <tbody>
+    <tr *ngFor="let owner of owners ">
+      <td>{{owner.id}}</td>
+      <<td>{{owner.name}}</td>
+      <td>{{owner.surname}}</td>
+      <td><button class="btn btn-danger" (click)="deleteUser(owner)"> Delete User</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

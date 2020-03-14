@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dea8ce38-36ae-46a8-b894-92f6c1a2366b" name="Default Changelist" comment="Copy backend file fro previous app">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/backend_war_exploded.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
@@ -102,7 +101,33 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Spring_5_2_3_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Spring_Data_JPA_2_2_4_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Spring_MVC_5_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/backend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/frontapp/proxy.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/frontapp/src/app/common/Apartment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/frontapp/src/app/common/owner.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/apartments/apartments.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/apartments/apartments.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/apartments/apartments.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/apartments/apartments.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/owner-form/owner-form.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/owner-form/owner-form.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/owner-form/owner-form.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/owner-form/owner-form.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/owners/owners.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/owners/owners.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/owners/owners.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/owners/owners.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/frontapp/src/app/services/apartment.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/frontapp/src/app/services/apartment.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/frontapp/src/app/services/owner.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/frontapp/src/app/services/owner.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,29 +217,33 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/front/frontapp/src/app/services" />
+    <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/front/frontapp/node_modules/protractor" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.16992188" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="ts.external.directory.path" value="C:\Users\rbulinsk\MojeKody\Aplication\01_ Community_System\Community_System\front\frontapp\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.buulean.backend" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rbulinsk\MojeKody\Aplication\01_ Community_System\Community_System\front\frontapp\src\app\services" />
+      <recent name="C:\Users\rbulinsk\MojeKody\Aplication\01_ Community_System\Community_System\front\frontapp" />
+      <recent name="C:\Users\rbulinsk\MojeKody\Aplication\01_ Community_System\Community_System\front\frontapp\src\environments" />
+      <recent name="C:\Users\rbulinsk\MojeKody\Aplication\01_ Community_System\Community_System\front\frontapp\src\app" />
       <recent name="C:\Users\rbulinsk\MojeKody\Aplication\01_ Community_System\Community_System\backend" />
-      <recent name="C:\Users\rbulinsk\MojeKody\Aplication\01_ Community_System\Community_System\backend\src\main\resources\templates" />
-      <recent name="C:\Users\rbulinsk\MojeKody\Aplication\01_ Community_System\Community_System\backend\src\main\resources" />
-      <recent name="C:\Users\rbulinsk\MojeKody\Aplication\01_ Community_System\Community_System\backend\src\main\resources\static" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BackendApplication">
+  <component name="RunManager" selected="npm.Angular CLI Server (frontapp)">
     <configuration name="E2E Tests (frontapp)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/front/frontapp/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
+      <protractor-package value="$PROJECT_DIR$/front/frontapp/node_modules/protractor" />
       <protractor-options value="" />
       <envs />
       <scope-kind value="ALL" />
@@ -293,12 +322,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:postgres@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -315,7 +339,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584188615024</updated>
-      <workItem from="1584188619239" duration="2579000" />
+      <workItem from="1584188619239" duration="3215000" />
+      <workItem from="1584191859924" duration="285000" />
     </task>
     <task id="LOCAL-00001" summary="Copy backend file fro previous app">
       <created>1584191122973</created>
@@ -324,7 +349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584191122973</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Copy backend files from previous app">
+      <created>1584191353828</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584191353828</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +367,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -343,7 +377,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Copy backend file fro previous app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Copy backend file fro previous app" />
+    <MESSAGE value="Copy backend files from previous app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Copy backend files from previous app" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1584189117255">
@@ -362,46 +397,58 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="120" y="304" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1584189802972" />
-    <state x="274" y="7" key="CommitChangelistDialog2" timestamp="1584191281140">
+    <state x="113" y="171" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584191707403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="274" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584191281140" />
-    <state x="549" y="106" key="FileChooserDialogImpl" timestamp="1584189753076">
+    <state x="113" y="171" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1584191707403" />
+    <state x="274" y="7" key="CommitChangelistDialog2" timestamp="1584191352386">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="106" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584189753076" />
-    <state width="1493" height="215" key="GridCell.Tab.0.bottom" timestamp="1584190993262">
+    <state x="274" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584191352386" />
+    <state x="549" y="106" key="FileChooserDialogImpl" timestamp="1584191978206">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584190993262" />
-    <state width="1493" height="215" key="GridCell.Tab.0.center" timestamp="1584190993262">
+    <state x="549" y="106" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584191978206" />
+    <state width="1133" height="291" key="GridCell.Tab.0.bottom" timestamp="1584192145912">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584190993262" />
-    <state width="1493" height="215" key="GridCell.Tab.0.left" timestamp="1584190993262">
+    <state width="1133" height="291" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584192145912" />
+    <state width="1133" height="291" key="GridCell.Tab.0.center" timestamp="1584192145912">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584190993262" />
-    <state width="1493" height="215" key="GridCell.Tab.0.right" timestamp="1584190993262">
+    <state width="1133" height="291" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584192145912" />
+    <state width="1133" height="291" key="GridCell.Tab.0.left" timestamp="1584192145912">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584190993262" />
-    <state width="1493" height="215" key="GridCell.Tab.1.bottom" timestamp="1584190993263">
+    <state width="1133" height="291" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584192145912" />
+    <state width="1133" height="291" key="GridCell.Tab.0.right" timestamp="1584192145912">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584190993263" />
-    <state width="1493" height="215" key="GridCell.Tab.1.center" timestamp="1584190993263">
+    <state width="1133" height="291" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584192145912" />
+    <state width="1493" height="215" key="GridCell.Tab.1.bottom" timestamp="1584191844087">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1584190993263" />
-    <state width="1493" height="215" key="GridCell.Tab.1.left" timestamp="1584190993262">
+    <state width="1493" height="215" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584191844087" />
+    <state width="1493" height="215" key="GridCell.Tab.1.center" timestamp="1584191844087">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1584190993262" />
-    <state width="1493" height="215" key="GridCell.Tab.1.right" timestamp="1584190993263">
+    <state width="1493" height="215" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1584191844087" />
+    <state width="1493" height="215" key="GridCell.Tab.1.left" timestamp="1584191844087">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1584190993263" />
+    <state width="1493" height="215" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1584191844087" />
+    <state width="1493" height="215" key="GridCell.Tab.1.right" timestamp="1584191844087">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="215" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1584191844087" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1584191383712">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584191383712" />
+    <state x="282" y="213" key="com.intellij.ide.util.TipDialog" timestamp="1584191860796">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="282" y="213" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584191860796" />
     <state x="209" y="0" key="new project wizard" timestamp="1584189233615">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
