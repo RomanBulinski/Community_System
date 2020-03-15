@@ -11,16 +11,16 @@ import java.util.Objects;
 public class Resolution {
 
     private Long id;
-    private String number;
+    private String symbol;
     private String title;
     private String text;
 
     public Resolution() {
     }
 
-    public Resolution(Long id, String number, String title, String text) {
+    public Resolution(Long id, String symbol, String title, String text) {
         this.id=id;
-        this.number=number;
+        this.symbol=symbol;
         this.title=title;
         this.text=text;
 
@@ -34,12 +34,12 @@ public class Resolution {
         this.id = id;
     }
 
-    public String getNumber() {
-        return number;
+    public String getSymbol() {
+        return symbol;
     }
 
-    public void setNumber(String number) {
-        this.number = number;
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
     }
 
     public String getTitle() {
@@ -64,21 +64,21 @@ public class Resolution {
         if (o == null || getClass() != o.getClass()) return false;
         Resolution that = (Resolution) o;
         return Objects.equals(id, that.id) &&
-                Objects.equals(number, that.number) &&
+                Objects.equals(symbol, that.symbol) &&
                 Objects.equals(title, that.title) &&
                 Objects.equals(text, that.text);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, number, title, text);
+        return Objects.hash(id, symbol, title, text);
     }
 
     @Override
     public String toString() {
         return "Resolution{" +
                 "id=" + id +
-                ", number='" + number + '\'' +
+                ", symbol='" + symbol + '\'' +
                 ", title='" + title + '\'' +
                 ", text='" + text + '\'' +
                 '}';

@@ -11,6 +11,7 @@ import {ApartmentService} from "./services/apartment.service";
 import { OwnerFormComponent } from './pages/owner-form/owner-form.component';
 import {FormsModule} from "@angular/forms";
 import { NavComponent } from './nav/nav.component';
+import { ResolutionsComponent } from './pages/resolutions/resolutions.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { NavComponent } from './nav/nav.component';
     OwnersComponent,
     ApartmentsComponent,
     OwnerFormComponent,
-    NavComponent
+    NavComponent,
+    ResolutionsComponent
   ],
   imports: [
     BrowserModule,

@@ -19,4 +19,4 @@ INSERT INTO apartments(apartment_number, area, level) VALUES('1', 42.78, 1);
 INSERT INTO garages(garage_number, area, level) VALUES('1G', 12.75, -1);
 INSERT INTO garages(garage_number, area, level) VALUES('2G', 12.75, -1);
 
-INSERT INTO resolutions(id, title, text) VALUES(1, 'Za wymina windi', 'W oparciu o xxxx');
+INSERT INTO resolutions(id, symbol, title, text) VALUES(1, '17-2017',''Za wymina windi', 'W oparciu o xxxx');
