@@ -22,4 +22,5 @@ CREATE TABLE permissions_in_roles(id serial PRIMARY KEY, role_id integer, permis
 DROP TABLE IF EXISTS users;
 CREATE TABLE users(id serial PRIMARY KEY, login VARCHAR(255), email VARCHAR (255), role_id integer );
 
-
+DROP TABLE IF EXISTS resolutions;
+CREATE TABLE resolutions(id serial PRIMARY KEY, number VARCHAR(50),title VARCHAR(255), text VARCHAR (1000) );
