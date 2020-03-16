@@ -13,37 +13,37 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
-@RequestMapping("/resolution")
+@RequestMapping("/resolutions")
 public class ResolutionController {
 
     @Autowired
     private ResolutionService resolutionService;
 
     @GetMapping()
-    public List<Resolution> findOwners(){
+    public List<Resolution> findResolutions(){
         List<Resolution> resolutions = (List<Resolution>) resolutionService.findAll();
         return resolutions;
     }
 
-    @GetMapping(path = {"/{id}"})
-    public Resolution findOne(@PathVariable("id") int id){
-        return resolutionService.findById(id);
-    }
+//    @GetMapping(path = {"/{id}"})
+//    public Resolution findOne(@PathVariable("id") int id){
+//        return resolutionService.findById(id);
+//    }
 
-    @DeleteMapping(path ={"/{id}"})
-    public Resolution delete(@PathVariable("id") int id) {
-        return resolutionService.delete(id);
-    }
+//    @DeleteMapping(path ={"/{id}"})
+//    public Resolution delete(@PathVariable("id") int id) {
+//        return resolutionService.delete(id);
+//    }
 
-    @PostMapping()
-    public Resolution create(@RequestBody Resolution resolution) {
-        return resolutionService.create(resolution);
-    }
-
-    @PutMapping
-    public Resolution update(@RequestBody Resolution resolution){
-        return resolutionService.update(resolution);
-    }
+//    @PostMapping()
+//    public Resolution create(@RequestBody Resolution resolution) {
+//        return resolutionService.create(resolution);
+//    }
+//
+//    @PutMapping
+//    public Resolution update(@RequestBody Resolution resolution){
+//        return resolutionService.update(resolution);
+//    }
 
 
 }

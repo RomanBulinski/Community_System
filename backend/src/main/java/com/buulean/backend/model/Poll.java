@@ -5,8 +5,8 @@ package com.buulean.backend.model;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "polls")
+//@Entity
+//@Table(name = "polls")
 public class Poll {
 
     private Long id;

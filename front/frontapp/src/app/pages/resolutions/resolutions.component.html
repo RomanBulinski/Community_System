@@ -1,1 +1,25 @@
-<p>resolutions works!</p>
+<div class="col-md-6">
+  <h2> Resolutions / Uchwały </h2>
+
+  <table class="table table-striped">
+
+    <tr>
+      <th class="hidden">Id</th>
+      <th>Symbol</th>
+      <th>Title</th>
+      <th>Text</th>
+      <th>Year</th>
+    </tr>
+
+    <tbody>
+    <tr *ngFor="let resolution of resolutions ">
+      <td>{{resolution.id}}</td>
+      <td>{{resolution.symbol}}</td>
+      <td>{{resolution.title}}</td>
+      <td>{{resolution.text}}</td>
+      <td>{{resolution.year}}</td>
+<!--      <td><button class="btn btn-danger" (click)="deleteUser(owner)"> Delete User</button></td>-->
+    </tr>
+    </tbody>
+  </table>
+</div>

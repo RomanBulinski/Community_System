@@ -11,37 +11,37 @@ import java.util.List;
 public class ResolutionService implements IResolutionService {
 
     @Autowired
-    private ResolutionRepository ResolutionRepository;
+    private ResolutionRepository resolutionRepository;
 
     @Override
     public List<Resolution> findAll() {
-        return (List<Resolution>) ResolutionRepository.findAll();
+        return (List<Resolution>) resolutionRepository.findAll();
     }
 
-    @Override
-    public Resolution delete(long id) {
-        Resolution resolution = ResolutionRepository.findById(id).get();
-        if(Resolution != null){
-            ResolutionRepository.delete(resolution);
-        }
-        return resolution;
-    }
+//    @Override
+//    public Resolution delete(long id) {
+//        Resolution resolution = ResolutionRepository.findById(id).get();
+//        if(resolution != null){
+//            ResolutionRepository.delete(resolution);
+//        }
+//        return resolution;
+//    }
 
-    @Override
-    public Resolution create(Resolution resolution) {
-        return ResolutionRepository.save(resolution);
-    }
+//    @Override
+//    public Resolution create(Resolution resolution) {
+//        return ResolutionRepository.save(resolution);
+//    }
 
-    @Override
-    public Resolution findById(int id) {
-        long longId = (long) id;
-        return ResolutionRepository.getOne(longId);
-    }
+//    @Override
+//    public Resolution findById(int id) {
+//        long longId = (long) id;
+//        return ResolutionRepository.getOne(longId);
+//    }
 
-    @Override
-    public Resolution update(Resolution Resolution) {
-        return null;
-    }
+//    @Override
+//    public Resolution update(Resolution Resolution) {
+//        return null;
+//    }
 
 
 

@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'apartments_action', component: ApartmentsComponent },
   { path: 'owners_action', component: OwnersComponent },
   { path: 'addowner', component: OwnerFormComponent },
-  { path: 'resoutions_action', component: ResolutionsComponent }
+  { path: 'resolutions_action', component: ResolutionsComponent }
 
 ];
 

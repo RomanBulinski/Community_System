@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Owner} from "../common/owner";
+import {Resolution} from "../common/Resolution";
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -17,7 +18,7 @@ export class ResolutionService {
   private resolutionsUrl = 'http://localhost:8080/resolutions';
 
   public getResolutions() {
-    return this.http.get<Owner[]>(this.resolutionsUrl);
+    return this.http.get<Resolution[]>(this.resolutionsUrl);
   }
 
   // public deleteUser(owner) {

@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ResolutionRepository extends JpaRepository<Resolution, Long> {
 
-    void delete(Resolution resolution);
+//    void delete(Resolution resolution);
 
 
 }

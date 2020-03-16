@@ -1,8 +1,8 @@
 export class Resolution {
   id: number;
-  symbol: String;
-  title: String;
-  text: String;
-
+  symbol: string;
+  title: string;
+  text: string;
+  year: number;
 }
 
