@@ -1,0 +1,27 @@
+<div class="col-md-6">
+<h2> Properties / Własność</h2>
+
+<table class="table table-striped">
+
+  <tr>
+    <th class="hidden">Id</th>
+    <th>type</th>
+    <th>symbol</th>
+    <th>area</th>
+    <th>level</th>
+    <th>participation</th>
+  </tr>
+
+  <tbody>
+  <tr *ngFor="let property of properties ">
+    <td>{{property.id}}</td>
+    <td>{{property.type}}</td>
+    <td>{{property.symbol}}</td>
+    <td>{{property.area}}</td>
+    <td>{{property.level}}</td>
+    <td>{{property.participation}}</td>
+  </tr>
+  </tbody>
+
+</table>
+</div>

@@ -6,22 +6,22 @@ import { AppComponent } from './app.component';
 import { OwnersComponent } from './pages/owners/owners.component';
 import {HttpClientModule} from "@angular/common/http";
 import { OwnerService } from './services/owner.service';
-import { ApartmentsComponent } from './pages/apartments/apartments.component';
-import {ApartmentService} from "./services/apartment.service";
+
 import { OwnerFormComponent } from './pages/owner-form/owner-form.component';
 import {FormsModule} from "@angular/forms";
 import { NavComponent } from './nav/nav.component';
 import { ResolutionsComponent } from './pages/resolutions/resolutions.component';
+import { PropertiesComponent } from './pages/properties/properties.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     OwnersComponent,
-    ApartmentsComponent,
     OwnerFormComponent,
     NavComponent,
-    ResolutionsComponent
+    ResolutionsComponent,
+    PropertiesComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +31,6 @@ import { ResolutionsComponent } from './pages/resolutions/resolutions.component'
   ],
   providers: [
     OwnerService,
-    ApartmentService
   ],
   bootstrap: [AppComponent]
 })
