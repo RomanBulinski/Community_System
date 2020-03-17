@@ -5,8 +5,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Objects;
 
-
 //class witch is responsible for - Uchwała : id / number / tytuł / tresc / rok
+
 @Entity
 @Table(name = "resolutions")
 public class Resolution {

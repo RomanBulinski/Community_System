@@ -12,6 +12,7 @@ import {FormsModule} from "@angular/forms";
 import { NavComponent } from './nav/nav.component';
 import { ResolutionsComponent } from './pages/resolutions/resolutions.component';
 import { PropertiesComponent } from './pages/properties/properties.component';
+import { PollsComponent } from './pages/polls/polls.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { PropertiesComponent } from './pages/properties/properties.component';
     OwnerFormComponent,
     NavComponent,
     ResolutionsComponent,
-    PropertiesComponent
+    PropertiesComponent,
+    PollsComponent
   ],
   imports: [
     BrowserModule,
