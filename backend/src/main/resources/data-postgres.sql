@@ -28,8 +28,8 @@ CREATE TABLE polls(id serial PRIMARY KEY,
                     owner_id numeric, yes BOOLEAN,
                     against BOOLEAN, abstention BOOLEAN );
 
-INSERT INTO polls( resolution_id, property_id, owner_id, yes, against, abstention )
+INSERT INTO polls( id, resolution_id, property_id, owner_id, yes, against, abstention )
                     VALUES
-                    (1,1,1,true,null, null),
-                    (1,1,1,null,false, null),
-                    (1,1,1,null,null,true);
+                    (1,1,1,1,true,null, null),
+                    (2,1,1,1,null,false, null),
+                    (3,1,1,1,null,null,true);
