@@ -5,16 +5,18 @@ package com.buulean.backend.model;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-//@Entity
-//@Table(name = "polls")
+@Entity
+@Table(name = "polls")
 public class Poll {
 
     private Long id;
     private Long resolution_id;
+    private Long property_id;
     private Long owner_id;
-    private boolean for_reseolution;
-    private boolean against_reseolution;
+    private boolean yes;
+    private boolean no;
     private boolean abstention;
+
 
 
 }

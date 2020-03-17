@@ -22,3 +22,14 @@ INSERT INTO garages(garage_number, area, level) VALUES('2G', 12.75, -1);
 INSERT INTO resolutions(id, symbol,title, text, year) VALUES(1, '5-2017', 'Za wymina wind', 'W oparciu o xxxx', 2015);
 INSERT INTO resolutions(id, symbol,title, text, year) VALUES(2, '6-2017', 'Za całość', 'W oparciu o yyy', 2017);
 
+CREATE TABLE polls(id serial PRIMARY KEY,
+                    resolution_id numeric,
+                    property_id numeric,
+                    owner_id numeric, yes BOOLEAN,
+                    against BOOLEAN, abstention BOOLEAN );
+
+INSERT INTO polls( resolution_id, property_id, owner_id, yes, against, abstention )
+                    VALUES
+                    (1,1,1,true,null, null),
+                    (1,1,1,null,false, null),
+                    (1,1,1,null,null,true);

@@ -22,3 +22,9 @@ CREATE TABLE resolutions(id serial PRIMARY KEY, symbol VARCHAR(50),title VARCHAR
 DROP TABLE IF EXISTS properties;
 CREATE TABLE properties(id serial PRIMARY KEY, type VARCHAR(255), symbol VARCHAR(255), area numeric, level integer, participation numeric );
 
+DROP TABLE IF EXISTS polls;
+CREATE TABLE polls(id serial PRIMARY KEY,
+                    resolution_id numeric,
+                    property_id numeric,
+                    owner_id numeric, yes BOOLEAN,
+                    against BOOLEAN, abstention BOOLEAN );
