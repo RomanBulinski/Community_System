@@ -12,9 +12,16 @@ INSERT INTO owners(name, surname) VALUES('Wojtek', 'Nowak');
 INSERT INTO owners(name, surname) VALUES('Franek', 'Bucek');
 INSERT INTO owners(name, surname) VALUES('Józek', 'Belka');
 
-INSERT INTO properties( type , symbol , area , level , participation ) VALUES('apartment', 'm27', 60.21, 5, 1.03);
-INSERT INTO properties( type , symbol , area , level , participation ) VALUES('apartment', 'm27', 60.21, 5, 1.03);
-INSERT INTO properties( type , symbol , area , level , participation ) VALUES('garage', 'g5', 12.21, -1, 0.22);
+INSERT INTO properties( type , symbol , area , level , participation )
+                        VALUES
+                        ('apartment', 'm27', 60.21, 5, 1.03),
+                        ('apartment', 'm27', 60.21, 5, 1.03),
+                        ('garage', 'g5', 12.21, -1, 0.22),
+                        ('apartment', 'm22', 60.21, 5, 1.03),
+                        ('garage', 'g4', 12.21, -1, 0.22),
+                        ('apartment', 'm23', 60.21, 5, 1.03),
+                        ('garage', 'g1', 12.21, -1, 0.22);
+
 
 INSERT INTO garages(garage_number, area, level) VALUES('1G', 12.75, -1);
 INSERT INTO garages(garage_number, area, level) VALUES('2G', 12.75, -1);
