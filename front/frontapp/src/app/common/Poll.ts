@@ -1,10 +1,10 @@
 export class Poll {
   id: number;
-  idResolution: number;
-  idProperty: number;
-  idOwner: number;
+  resolutionid: number;
+  propertyid: number;
+  ownerid: number;
   yes: boolean;
-  no: boolean;
-  abstain: number;
+  against: boolean;
+  abstention: boolean;
 }
 

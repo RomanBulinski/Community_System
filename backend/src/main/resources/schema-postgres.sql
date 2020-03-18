@@ -17,14 +17,25 @@ DROP TABLE IF EXISTS users;
 CREATE TABLE users(id serial PRIMARY KEY, login VARCHAR(255), email VARCHAR (255), role_id integer );
 
 DROP TABLE IF EXISTS resolutions;
-CREATE TABLE resolutions(id serial PRIMARY KEY, symbol VARCHAR(50),title VARCHAR(255), text VARCHAR (1000), year integer );
+CREATE TABLE resolutions(id serial PRIMARY KEY,
+                        symbol VARCHAR(50),
+                        title VARCHAR(255),
+                        text VARCHAR (1000),
+                        year integer );
 
 DROP TABLE IF EXISTS properties;
-CREATE TABLE properties(id serial PRIMARY KEY, type VARCHAR(255), symbol VARCHAR(255), area numeric, level integer, participation numeric );
+CREATE TABLE properties(id serial PRIMARY KEY,
+                        type VARCHAR(255),
+                        symbol VARCHAR(255),
+                        area numeric,
+                        level integer,
+                        participation numeric );
 
 DROP TABLE IF EXISTS polls;
 CREATE TABLE polls(id serial PRIMARY KEY,
-                    resolution_id numeric,
-                    property_id numeric,
-                    owner_id numeric, yes BOOLEAN,
-                    against BOOLEAN, abstention BOOLEAN );
+                   resolutionid integer,
+                   propertyid integer,
+                   ownerid integer,
+                   yes BOOLEAN,
+                   against BOOLEAN,
+                   abstention BOOLEAN);

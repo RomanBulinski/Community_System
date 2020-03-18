@@ -5,19 +5,23 @@
 
     <tr>
       <th class="hidden">Id</th>
-      <th>type</th>
-      <th>symbol</th>
-      <th>area</th>
-      <th>level</th>
-      <th>participation</th>
+      <th>id_Resolution</th>
+      <th>id_Property</th>
+      <th>id_Owner</th>
+      <th>yes</th>
+      <th>against</th>
+      <th>abstention</th>
     </tr>
 
     <tbody>
     <tr *ngFor="let poll of polls ">
       <td>{{poll.id}}</td>
+      <td>{{poll.resolutionid}}</td>
+      <td>{{poll.propertyid}}</td>
+      <td>{{poll.ownerid}}</td>
       <td>{{poll.yes}}</td>
-      <td>{{poll.no}}</td>
-      <td>{{poll.abstain}}</td>
+      <td>{{poll.against}}</td>
+      <td>{{poll.abstention}}</td>
     </tr>
     </tbody>
 

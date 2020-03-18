@@ -12,9 +12,9 @@ public class Poll {
 
     @Id
     private Long id;
-    private Long resolution_id;
-    private Long property_id;
-    private Long owner_id;
+    private Long resolutionid;
+    private Long propertyid;
+    private Long ownerid;
     private boolean yes;
     private boolean against;
     private boolean abstention;
@@ -22,11 +22,11 @@ public class Poll {
     public Poll() {
     }
 
-    public Poll(Long id, Long resolution_id, Long property_id, Long owner_id, boolean yes, boolean against, boolean abstention ) {
+    public Poll(Long id, Long resolutionid, Long propertyid, Long ownerid, boolean yes, boolean against, boolean abstention ) {
         this.id=id;
-        this.resolution_id=resolution_id;
-        this.property_id=property_id;
-        this.owner_id=owner_id;
+        this.resolutionid=resolutionid;
+        this.propertyid=propertyid;
+        this.ownerid=ownerid;
         this.yes=yes;
         this.against=against;
         this.abstention=abstention;
@@ -40,28 +40,28 @@ public class Poll {
         this.id = id;
     }
 
-    public Long getResolution_id() {
-        return resolution_id;
+    public Long getResolutionid() {
+        return resolutionid;
     }
 
-    public void setResolution_id(Long resolution_id) {
-        this.resolution_id = resolution_id;
+    public void setResolutionid(Long resolutionid) {
+        this.resolutionid = resolutionid;
     }
 
-    public Long getProperty_id() {
-        return property_id;
+    public Long getPropertyid() {
+        return propertyid;
     }
 
-    public void setProperty_id(Long property_id) {
-        this.property_id = property_id;
+    public void setProperty_id(Long propertyid) {
+        this.propertyid = propertyid;
     }
 
-    public Long getOwner_id() {
-        return owner_id;
+    public Long getOwnerid() {
+        return ownerid;
     }
 
-    public void setOwner_id(Long owner_id) {
-        this.owner_id = owner_id;
+    public void setOwnerid(Long ownerid) {
+        this.ownerid = ownerid;
     }
 
     public boolean isYes() {
