@@ -23,7 +23,7 @@ public class PollController {
     private PollService pollService;
 
     @GetMapping()
-    public List<Poll> findPropertys(){
+    public List<Poll> findPolls(){
         List<Poll> polls = (List<Poll>) pollService.findAll();
         return polls;
     }

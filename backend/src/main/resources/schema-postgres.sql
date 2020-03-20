@@ -36,6 +36,5 @@ CREATE TABLE polls(id serial PRIMARY KEY,
                    resolutionid integer,
                    propertyid integer,
                    ownerid integer,
-                   yes BOOLEAN,
-                   against BOOLEAN,
-                   abstention BOOLEAN);
+                   vote VARCHAR(3);
+

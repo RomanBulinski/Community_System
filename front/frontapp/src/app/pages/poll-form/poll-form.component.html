@@ -1,12 +1,39 @@
-<p>poll-form works!</p>
+<div class="col-md-6">
+  <h2> Voting on the resolution / Głosowania nad uchwałą </h2>
 
-<td>
-  <mat-button-toggle-group #vote="matButtonToggleGroup" name="fontStyle" aria-label="Font Style">
-<!--                           [value]="selectedValue(owner.list_of_votes)"-->
-<!--                           (click)="onClick(owner.property, vote.value,  owner.participation, owner.list_of_votes  )"-->
-<!--                           [disabled]="!authService.isLoggedInAdmin()">-->
-    <mat-button-toggle value="TAK">+</mat-button-toggle>
-    <mat-button-toggle value="NIE">-</mat-button-toggle>
-    <mat-button-toggle value="WSTRZY">0</mat-button-toggle>
-  </mat-button-toggle-group>
-</td>
+  <table class="table table-striped">
+
+    <tr>
+      <th class="hidden">Id</th>
+      <th>typ</th>
+      <th>symbol</th>
+      <th>participation</th>
+      <th>vote</th>
+    </tr>
+
+    <tbody>
+      <tr *ngFor="let property of properties ">
+        <td>{{property.id}}</td>
+        <td>{{property.type}}</td>
+        <td>{{property.symbol}}</td>
+        <td>{{property.participation}}</td>
+        <td>
+          <mat-button-toggle-group #vote="matButtonToggleGroup" name="fontStyle" aria-label="Font Style">
+            <!--                           [value]="selectedValue(owner.list_of_votes)"-->
+            <!--                           (click)="onClick(owner.property, vote.value,  owner.participation, owner.list_of_votes  )"-->
+            <!--                           [disabled]="!authService.isLoggedInAdmin()">-->
+            <mat-button-toggle value="TAK">+</mat-button-toggle>
+            <mat-button-toggle value="NIE">-</mat-button-toggle>
+            <mat-button-toggle value="WSTRZY">0</mat-button-toggle>
+          </mat-button-toggle-group>
+        </td>
+
+      </tr>
+    </tbody>
+
+  </table>
+
+
+
+
+</div>

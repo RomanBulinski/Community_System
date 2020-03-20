@@ -8,22 +8,19 @@
       <th>id_Resolution</th>
       <th>id_Property</th>
       <th>id_Owner</th>
-      <th>yes</th>
-      <th>against</th>
-      <th>abstention</th>
+      <th>vote</th>
     </tr>
 
     <tbody>
-    <tr *ngFor="let poll of polls ">
-      <td>{{poll.id}}</td>
-      <td>{{poll.resolutionid}}</td>
-      <td>{{poll.propertyid}}</td>
-      <td>{{poll.ownerid}}</td>
-      <td>{{poll.yes}}</td>
-      <td>{{poll.against}}</td>
-      <td>{{poll.abstention}}</td>
+    <tr *ngFor="let pollOnFront of pollsOnFront ">
+      <td>{{pollOnFront.resolution}}</td>
+      <td>{{pollOnFront.property}}</td>
+      <td>{{pollOnFront.ownerSurname}}</td>
+      <td>{{pollOnFront.vote}}</td>
     </tr>
     </tbody>
 
   </table>
 </div>
+
+

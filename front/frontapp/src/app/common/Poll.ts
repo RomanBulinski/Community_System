@@ -3,8 +3,6 @@ export class Poll {
   resolutionid: number;
   propertyid: number;
   ownerid: number;
-  yes: boolean;
-  against: boolean;
-  abstention: boolean;
+  vote: string;
 }
 

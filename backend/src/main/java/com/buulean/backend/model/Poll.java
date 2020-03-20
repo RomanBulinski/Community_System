@@ -15,21 +15,18 @@ public class Poll {
     private Long resolutionid;
     private Long propertyid;
     private Long ownerid;
-    private boolean yes;
-    private boolean against;
-    private boolean abstention;
+    private String vote;
+
 
     public Poll() {
     }
 
-    public Poll(Long id, Long resolutionid, Long propertyid, Long ownerid, boolean yes, boolean against, boolean abstention ) {
+    public Poll(Long id, Long resolutionid, Long propertyid, Long ownerid, String vote) {
         this.id=id;
         this.resolutionid=resolutionid;
         this.propertyid=propertyid;
         this.ownerid=ownerid;
-        this.yes=yes;
-        this.against=against;
-        this.abstention=abstention;
+        this.vote=vote;
     }
 
     public Long getId() {
@@ -64,27 +61,11 @@ public class Poll {
         this.ownerid = ownerid;
     }
 
-    public boolean isYes() {
-        return yes;
+    public String getVote() {
+        return vote;
     }
 
-    public void setYes(boolean yes) {
-        this.yes = yes;
-    }
-
-    public boolean isAgainst() {
-        return against;
-    }
-
-    public void setAgainst(boolean against) {
-        this.against = against;
-    }
-
-    public boolean isAbstention() {
-        return abstention;
-    }
-
-    public void setAbstention(boolean abstention) {
-        this.abstention = abstention;
+    public void setVote(String vote) {
+        this.vote = vote;
     }
 }

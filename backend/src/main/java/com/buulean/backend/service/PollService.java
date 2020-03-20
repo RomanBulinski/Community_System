@@ -20,4 +20,7 @@ public class PollService implements IPollService{
         return (List<Poll>) pollRepository.findAll();
     }
 
+
+
+
 }
