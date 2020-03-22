@@ -11,7 +11,7 @@ public interface PollRepository extends JpaRepository<Poll, Long> {
 
     void delete(Poll poll);
 
-//    Owner save(Owner owner);
+    Poll save(Poll poll);
 
 
 

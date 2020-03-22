@@ -5,11 +5,9 @@ import com.buulean.backend.model.Property;
 import com.buulean.backend.service.PollService;
 import com.buulean.backend.service.PropertyService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 //@Controller
@@ -28,10 +26,35 @@ public class PollController {
         return polls;
     }
 
-//    @GetMapping(path = {"/{id}"})
-//    public Property findOne(@PathVariable("id") int id){
-//        return PropertyService.findById(id);
+    @GetMapping("/byPropertyID/{id}")
+    public List<Poll> findPollsByPropertyId(@PathVariable("id") int id){
+        List<Poll> polls = (List<Poll>) pollService.findPollsByPropertyId(id);
+        return polls;
+    }
+
+//    @GetMapping("/byOwnerID/{id}")
+//    public List<Poll> findPollsByOwnerID(@PathVariable("id") int id){
+//        List<Poll> polls = (List<Poll>) pollService.findPollsByOwnerID(id);
+//        return polls;
 //    }
+
+    @GetMapping("/byResolutionID/{id}")
+    public List<Poll> findPollsByResolutionID(@PathVariable("id") int id){
+        List<Poll> polls = (List<Poll>) pollService.findPollsByResolutionID(id);
+        return polls;
+    }
+
+
+    @PostMapping()
+    public Poll create(@RequestBody Poll poll) {
+        return pollService.create(poll);
+    }
+
+
+
+
+
+
 //
 //    @DeleteMapping(path ={"/{id}"})
 //    public Property delete(@PathVariable("id") int id) {

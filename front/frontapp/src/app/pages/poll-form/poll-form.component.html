@@ -1,5 +1,7 @@
 <div class="col-md-6">
-  <h2> Voting on the resolution / Głosowania nad uchwałą </h2>
+  <h2> Voting on the resolution / Głosowania nad uchwałą : </h2>
+  <h4>   {{resulutionSymbol}} / {{resulutionTitle}}  / {{resulutionYear}}  </h4>
+  <h4>   {{resolutionID}} </h4>
 
   <table class="table table-striped">
 
@@ -18,9 +20,11 @@
         <td>{{property.symbol}}</td>
         <td>{{property.participation}}</td>
         <td>
-          <mat-button-toggle-group #vote="matButtonToggleGroup" name="fontStyle" aria-label="Font Style">
+          <mat-button-toggle-group #vote="matButtonToggleGroup" name="fontStyle" aria-label="Font Style"
+                (click)="onClick( property.id, vote.value)"
+                     >
+
             <!--                           [value]="selectedValue(owner.list_of_votes)"-->
-            <!--                           (click)="onClick(owner.property, vote.value,  owner.participation, owner.list_of_votes  )"-->
             <!--                           [disabled]="!authService.isLoggedInAdmin()">-->
             <mat-button-toggle value="TAK">+</mat-button-toggle>
             <mat-button-toggle value="NIE">-</mat-button-toggle>
@@ -32,8 +36,5 @@
     </tbody>
 
   </table>
-
-
-
 
 </div>

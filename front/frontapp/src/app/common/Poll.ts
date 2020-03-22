@@ -1,8 +1,7 @@
 export class Poll {
-  id: number;
-  resolutionid: number;
-  propertyid: number;
-  ownerid: number;
+  id: string;
+  resolutionid: string;
+  propertyid: string;
   vote: string;
 }
 

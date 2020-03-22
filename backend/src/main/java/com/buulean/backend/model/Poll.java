@@ -2,30 +2,27 @@ package com.buulean.backend.model;
 
 //Glosowanie uchwal
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "polls")
 public class Poll {
 
     @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Basic(fetch = FetchType.EAGER)
     private Long id;
     private Long resolutionid;
     private Long propertyid;
-    private Long ownerid;
     private String vote;
 
 
     public Poll() {
     }
 
-    public Poll(Long id, Long resolutionid, Long propertyid, Long ownerid, String vote) {
-        this.id=id;
+    public Poll(Long resolutionid, Long propertyid, Long ownerid, String vote) {
         this.resolutionid=resolutionid;
         this.propertyid=propertyid;
-        this.ownerid=ownerid;
         this.vote=vote;
     }
 
@@ -51,14 +48,6 @@ public class Poll {
 
     public void setProperty_id(Long propertyid) {
         this.propertyid = propertyid;
-    }
-
-    public Long getOwnerid() {
-        return ownerid;
-    }
-
-    public void setOwnerid(Long ownerid) {
-        this.ownerid = ownerid;
     }
 
     public String getVote() {

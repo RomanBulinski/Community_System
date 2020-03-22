@@ -1,4 +1,9 @@
 
+// klasa dla obiektu który bedzie zbierał dane z klasy Poll
+// przerabial idki na nazwy
+// i reprezentował je na froncie
+// np "resolutionid" na "title"
+
 export class PollOnFront {
   id: number;
   resolution: string;

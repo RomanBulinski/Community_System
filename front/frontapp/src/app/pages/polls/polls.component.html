@@ -13,10 +13,17 @@
 
     <tbody>
     <tr *ngFor="let pollOnFront of pollsOnFront ">
+      <td>{{pollOnFront.id}}</td>
       <td>{{pollOnFront.resolution}}</td>
       <td>{{pollOnFront.property}}</td>
       <td>{{pollOnFront.ownerSurname}}</td>
       <td>{{pollOnFront.vote}}</td>
+    </tr>
+    <tr *ngFor="let poll of polls ">
+      <td>{{poll.id}}</td>
+      <td>{{poll.propertyid}}</td>
+      <td>{{poll.resolutionid}}</td>
+      <td>{{poll.vote}}</td>
     </tr>
     </tbody>
 

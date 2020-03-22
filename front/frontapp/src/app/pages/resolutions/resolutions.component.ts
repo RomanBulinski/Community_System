@@ -12,6 +12,8 @@ import {Owner} from "../../common/owner";
 export class ResolutionsComponent implements OnInit {
 
   resolutions: Resolution[];
+  resolutionID: string;
+  location: any;
 
   constructor(private router: Router, private resolutionService: ResolutionService) {
   }
@@ -22,6 +24,12 @@ export class ResolutionsComponent implements OnInit {
         this.resolutions = data;
       });
   }
+
+  goForVote( resolution: Resolution ){
+       location.assign('/poll_form?resolutionID=' + resolution.id);
+  }
+
+
 
   // deleteUser(owner: Owner): void {
   //   this.ownerService.deleteUser(owner)
