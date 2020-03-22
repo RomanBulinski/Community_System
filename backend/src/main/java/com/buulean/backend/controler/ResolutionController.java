@@ -25,10 +25,10 @@ public class ResolutionController {
         return resolutions;
     }
 
-//    @GetMapping(path = {"/{id}"})
-//    public Resolution findOne(@PathVariable("id") int id){
-//        return resolutionService.findById(id);
-//    }
+    @GetMapping(path = {"/{id}"})
+    public Resolution findOne(@PathVariable("id") int id){
+        return resolutionService.findById(id);
+    }
 
 //    @DeleteMapping(path ={"/{id}"})
 //    public Resolution delete(@PathVariable("id") int id) {

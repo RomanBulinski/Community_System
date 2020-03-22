@@ -5,6 +5,8 @@ import {Poll} from '../../common/Poll';
 import {Property} from '../../common/Property';
 import {PropertyService} from '../../services/property.service';
 import { ActivatedRoute } from '@angular/router';
+import {ResolutionService} from '../../services/resolution.service';
+import {Resolution} from '../../common/Resolution';
 
 @Component({
   selector: 'app-poll-form',
@@ -16,8 +18,8 @@ export class PollFormComponent implements OnInit {
   polls: Poll[];
   properties: Property[];
   resolutionID = '';
-
-  resulutionSymbol = '5-2017';
+  res: Resolution;
+  resulutionSymbol = '';
   resulutionTitle = 'Absolutorium dla zrzadu';
   resulutionYear = '2017';
 
@@ -29,7 +31,8 @@ export class PollFormComponent implements OnInit {
   constructor(private router: Router,
               private pollService: PollService,
               private propertyService: PropertyService,
-              private rout: ActivatedRoute) { }
+              private rout: ActivatedRoute,
+              private resolutionService: ResolutionService) { }
 
   ngOnInit() {
     this.pollService.getPolls()
@@ -40,16 +43,23 @@ export class PollFormComponent implements OnInit {
       .subscribe( data => {
         this.properties = data;
       });
-
     this.rout.queryParams.subscribe(params => {
       this.resolutionID = params.resolutionID;
     });
+    this.resolutionService.getResolutionByID( this.resolutionID ).subscribe(params => {
+      this.resulutionSymbol = params.symbol;
+    });
+
+    // this.res = this.resolution.getResolutionByID( this.resolutionID );
+    // this.resulutionSymbol = this.res.symbol;
   }
+
 
   onClick( propertyId: string, value: string ) {
     this.createPoll(propertyId, value );
   }
 
+  // metoda do zapisu w BD nowego głosu nad daną uchwałą
   createPoll( propertyId: string, value: string ): void {
 
     const poll = new Poll();

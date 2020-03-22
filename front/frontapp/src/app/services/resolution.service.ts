@@ -21,6 +21,14 @@ export class ResolutionService {
     return this.http.get<Resolution[]>(this.resolutionsUrl);
   }
 
+  public getResolutionByID( id: string) {
+    return this.http.get<Resolution>(this.resolutionsUrl + '/' + id );
+  }
+
+
+
+
+
   // public deleteUser(owner) {
   //   return this.http.delete(this.ownersUrl + "/"+ owner.id);
   // }

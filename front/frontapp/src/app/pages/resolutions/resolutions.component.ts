@@ -31,6 +31,7 @@ export class ResolutionsComponent implements OnInit {
 
 
 
+
   // deleteUser(owner: Owner): void {
   //   this.ownerService.deleteUser(owner)
   //     .subscribe(data => {

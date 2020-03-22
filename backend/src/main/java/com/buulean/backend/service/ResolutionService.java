@@ -18,6 +18,12 @@ public class ResolutionService implements IResolutionService {
         return (List<Resolution>) resolutionRepository.findAll();
     }
 
+    @Override
+    public Resolution findById(int id) {
+        long longId = (long) id;
+        return resolutionRepository.getOne(longId);
+    }
+
 //    @Override
 //    public Resolution delete(long id) {
 //        Resolution resolution = ResolutionRepository.findById(id).get();
@@ -32,11 +38,7 @@ public class ResolutionService implements IResolutionService {
 //        return ResolutionRepository.save(resolution);
 //    }
 
-//    @Override
-//    public Resolution findById(int id) {
-//        long longId = (long) id;
-//        return ResolutionRepository.getOne(longId);
-//    }
+
 
 //    @Override
 //    public Resolution update(Resolution Resolution) {

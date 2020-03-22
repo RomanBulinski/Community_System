@@ -8,11 +8,13 @@ public interface IResolutionService {
 
     List<Resolution> findAll();
 
+    Resolution findById(int id);
+
 //    Resolution delete(long id);
 //
 //    Resolution create(Resolution resolution);
 //
-//    Resolution findById(int id);
+
 //
 //    Resolution update(Resolution resolution);
 

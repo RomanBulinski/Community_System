@@ -1,5 +1,7 @@
 package com.buulean.backend.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -9,6 +11,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "resolutions")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Resolution {
 
     @Id
