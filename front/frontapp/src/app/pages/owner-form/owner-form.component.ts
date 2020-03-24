@@ -11,10 +11,9 @@ import {OwnerService} from '../../services/owner.service';
 export class OwnerFormComponent {
 
   owner: Owner = new Owner();
-  istniejacaZmienna = false;
-
+  showPanel = false;
   @Output()
-  zmiennaEksportujaca = new EventEmitter();
+  exportContainer = new EventEmitter();
 
   constructor(private router: Router, private ownerService: OwnerService) {
   }
@@ -24,15 +23,14 @@ export class OwnerFormComponent {
       .subscribe( data => {
         alert('User created successfully.');
       });
-    this.eksport();
+    this.eksportAndChangeURL();
   }
 
-  eksport() {
-    this.zmiennaEksportujaca.emit(this.istniejacaZmienna);
+  //eksportuje zmienna do rodzica aby wyłączyć panel i jednoczesnie przeładowuje cała stronę
+  //czyli wykonuje dwie akcje aby wyłączyć panel - jedna z nich mozna zlikwidować
+  eksportAndChangeURL() {
+    this.exportContainer.emit(this.showPanel);
+    location.assign('/owners_action');
   }
-
-
-
-
 
 }

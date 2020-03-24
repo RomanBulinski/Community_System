@@ -21,7 +21,7 @@
   <button class="btn btn-danger" (click)="showHideAddOwnerPanel()" > Add Owner </button>
 
   <div *ngIf="isOwnerAddPanelVisible" >
-    <app-owner-form (zmiennaEksportujaca)="import($event)">></app-owner-form>
+    <app-owner-form (exportContainer)="import($event)">></app-owner-form>
   </div>
 
 </div>
