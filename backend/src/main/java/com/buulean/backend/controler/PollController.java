@@ -2,6 +2,7 @@ package com.buulean.backend.controler;
 
 import com.buulean.backend.model.Poll;
 import com.buulean.backend.model.Property;
+import com.buulean.backend.model.Resolution;
 import com.buulean.backend.service.PollService;
 import com.buulean.backend.service.PropertyService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,6 +45,10 @@ public class PollController {
         return polls;
     }
 
+    @GetMapping(path = {"/{id}"})
+    public Poll findOne(@PathVariable("id") int id){
+        return pollService.findById(id);
+    }
 
     @PostMapping()
     public Poll create(@RequestBody Poll poll) {

@@ -15,10 +15,14 @@ export class PollService {
   public getPolls() {
     return this.http.get<Poll[]>( this.pollsUrl );
   }
+
   public createPoll(poll: Poll) {
     return this.http.post<Poll>(this.pollsUrl, poll);
   }
 
+  public getPollByID(id:string) {
+    return this.http.get<Poll>( this.pollsUrl+"/"+id );
+  }
 
 }
 

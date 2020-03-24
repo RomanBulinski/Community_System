@@ -14,4 +14,9 @@ export class PropertyService {
   public getProperties() {
     return this.http.get<Property[]>( this.propertiesUrl );
   }
+
+
+
+
+
 }

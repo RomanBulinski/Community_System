@@ -1,7 +1,7 @@
 <div class="col-md-6">
-  <h2> Voting on the resolution / Głosowania nad uchwałą : </h2>
-  <h4>   {{resolutionID}} {{resulutionSymbol}} </h4>
-
+  <h2> Voting on the resolution </h2>
+  <h4>/ Głosowania nad uchwałą : </h4>
+  <h5>   {{resolutionID}} |{{resulutionSymbol}}  |{{resulutionTitle}}</h5>
 
   <table class="table table-striped">
 
@@ -22,13 +22,12 @@
         <td>
           <mat-button-toggle-group #vote="matButtonToggleGroup" name="fontStyle" aria-label="Font Style"
                 (click)="onClick( property.id, vote.value)"
+                [value]="setButtonState( property.id )"
                      >
-
-            <!--                           [value]="selectedValue(owner.list_of_votes)"-->
             <!--                           [disabled]="!authService.isLoggedInAdmin()">-->
-            <mat-button-toggle value="TAK">+</mat-button-toggle>
-            <mat-button-toggle value="NIE">-</mat-button-toggle>
-            <mat-button-toggle value="WSTRZY">0</mat-button-toggle>
+            <mat-button-toggle value="+">+</mat-button-toggle>
+            <mat-button-toggle value="-">-</mat-button-toggle>
+            <mat-button-toggle value="0">0</mat-button-toggle>
           </mat-button-toggle-group>
         </td>
 

@@ -10,14 +10,14 @@ mat-button-toggle {
   margin-left: 5px !important;
   padding: 0 15px !important;
   margin: 5px;
-
+  background-color: rgb(145, 144, 144) !important;
   z-index: 3 !important;
   height: 35px;
   width: 55;
 }
 
 mat-button-toggle:hover {
-  border: 1px #000 solid !important;
+  border: 1px #e0e0e0 solid !important;
   background-color: rgb(97, 96, 96) !important;
   border-radius: 5px !important;
   color: rgb(247, 244, 244) !important;
@@ -26,7 +26,7 @@ mat-button-toggle:hover {
 .mat-button-toggle-checked {
   border: 1px #000 solid !important;
   border-radius: 5px !important;
-  background-color: rgb(118, 117, 117) !important;
+  background-color: rgb(53, 52, 52) !important;
   color: rgb(247, 244, 244) !important;
 }
 

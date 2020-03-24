@@ -20,8 +20,10 @@ export class PollFormComponent implements OnInit {
   resolutionID = '';
   res: Resolution;
   resulutionSymbol = '';
-  resulutionTitle = 'Absolutorium dla zrzadu';
+  resulutionTitle = '';
   resulutionYear = '2017';
+
+  co = 'NIE';
 
   poll: Poll = new Poll();
   // nie = 'NIE';
@@ -46,21 +48,20 @@ export class PollFormComponent implements OnInit {
     this.rout.queryParams.subscribe(params => {
       this.resolutionID = params.resolutionID;
     });
+
     this.resolutionService.getResolutionByID( this.resolutionID ).subscribe(params => {
       this.resulutionSymbol = params.symbol;
+      this.resulutionTitle = params.title;
     });
-
-    // this.res = this.resolution.getResolutionByID( this.resolutionID );
-    // this.resulutionSymbol = this.res.symbol;
   }
 
 
-  onClick( propertyId: string, value: string ) {
+  onClick( propertyId: number, value: string ) {
     this.createPoll(propertyId, value );
   }
 
   // metoda do zapisu w BD nowego głosu nad daną uchwałą
-  createPoll( propertyId: string, value: string ): void {
+  createPoll( propertyId: number, value: string ): void {
 
     const poll = new Poll();
     poll.resolutionid = this.resolutionID;
@@ -72,4 +73,14 @@ export class PollFormComponent implements OnInit {
         // alert('Poll created successfully.');
       });
   }
+
+  setButtonState( propertyId: number ) {
+    for ( const poll of this.polls ) {
+      const check = poll.propertyid == propertyId && poll.resolutionid == this.resolutionID;
+      if ( check) {
+            return poll.vote;
+          }
+        }
+    }
+
 }

@@ -1,5 +1,6 @@
 package com.buulean.backend.service;
 
+import com.buulean.backend.model.Poll;
 import com.buulean.backend.model.Property;
 import com.buulean.backend.repository.PropertyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,11 @@ public class PropertyService implements IPropertyService{
     @Override
     public List<Property> findAll() {
         return (List<Property>) propertyRepository.findAll();
+    }
+
+    @Override
+    public Poll findById(int id) {
+        return null;
     }
 
 }

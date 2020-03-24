@@ -1,6 +1,7 @@
 package com.buulean.backend.service;
 
 import com.buulean.backend.model.Poll;
+import com.buulean.backend.model.Resolution;
 import com.buulean.backend.repository.PollRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -36,18 +37,10 @@ public class PollService implements IPollService {
         return resultList;
     }
 
-//    @Override
-//    public List<Poll> findPollsByOwnerID(int id){
-//        List<Poll> allPoll = findAll();
-//        List<Poll> resultList = new ArrayList<>();
-//        for (Poll poll : allPoll) {
-//            if (poll.getOwnerid()==id) {
-//                resultList.add(poll);
-//            }
-//        }
-//        return resultList;
-//    }
-
+    /*
+    Metoda do wyciagania listy wszystkich
+    głosów oddanych na konkretną  uchwałe wskazana poprzez podanie jej ID
+    **/
     @Override
     public List<Poll> findPollsByResolutionID( int id){
         List<Poll> allPoll = findAll();
@@ -65,14 +58,11 @@ public class PollService implements IPollService {
         return pollRepository.save(poll);
     }
 
-    private int getLastIDofPoll(){
-        List<Poll> allPoll = findAll();
-
-
-            return 1;
+    @Override
+    public Poll findById(int id) {
+        long longId = (long) id;
+        return pollRepository.getOne(longId);
     }
-
-
 
 
 }

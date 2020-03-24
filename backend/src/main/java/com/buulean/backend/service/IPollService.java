@@ -20,5 +20,5 @@ public interface IPollService {
 
     Poll create(@RequestBody Poll poll);
 
-
+    Poll findById(int id);
 }

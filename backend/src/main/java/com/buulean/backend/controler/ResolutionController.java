@@ -9,7 +9,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-//@Controller
+    /*
+    Resolution - Uchwała
+    Property - nieruchomość, własność
+    */
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")

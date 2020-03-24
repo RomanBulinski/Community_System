@@ -2,10 +2,13 @@ package com.buulean.backend.model;
 
 //Glosowanie uchwal
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "polls")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Poll {
 
     @Id
