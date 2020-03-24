@@ -64,7 +64,7 @@ export class PollFormComponent implements OnInit {
   createPoll( propertyId: number, value: string ): void {
 
     const poll = new Poll();
-    poll.resolutionid = this.resolutionID;
+    // poll.resolutionid = this.resolutionID;
     poll.propertyid = propertyId;
     poll.vote = value;
 

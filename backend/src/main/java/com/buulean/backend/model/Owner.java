@@ -11,7 +11,8 @@ import java.util.Objects;
 public class Owner {
 
     @Id
-//    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Basic(fetch = FetchType.EAGER)
     private Long id;
     private String name;
     private String surname;
@@ -19,8 +20,7 @@ public class Owner {
     public Owner() {
     }
 
-    public Owner(Long id, String name, String surname ) {
-        this.id = id;
+    public Owner( String name, String surname ) {
         this.name = name;
         this.surname = surname;
     }

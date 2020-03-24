@@ -30,14 +30,11 @@
 <!--</div>-->
 <div>
 <form>
+
 <!--  <div class="form-group">-->
 <!--    <label for="email">Email address:</label>-->
 <!--    <input type="email" [(ngModel)]="owner.email" placeholder="Email" name="email" class="form-control" id="email">-->
 <!--  </div>-->
-  <div class="form-group">
-    <label for="id">Id:</label>
-    <input [(ngModel)]="owner.id" placeholder="id" name="id" class="form-control" id="id">
-  </div>
 
   <div class="form-group">
     <label for="firstName">First Name:</label>
@@ -49,6 +46,6 @@
     <input [(ngModel)]="owner.surname" placeholder="Last name" name="lastName" class="form-control" id="lastName">
   </div>
 
-  <button class="btn btn-success" (click)="createUser()">Create</button>
+  <button class="btn btn-success" (click)="createUserAndEmitMessage()">Create</button>
 </form>
 </div>

@@ -1,21 +1,27 @@
 <div class="col-md-6">
-  <h2> Owners / Właśćiciele</h2>
+  <h2> Owners / Właściciele</h2>
 
   <table class="table table-striped">
 
     <tr>
-      <th class="hidden">Id</th>
+      <th class="hidden"> Id </th>
       <th>Name</th>
       <th>Surname</th>
     </tr>
-
     <tbody>
-    <tr *ngFor="let owner of owners ">
-      <td>{{owner.id}}</td>
-      <<td>{{owner.name}}</td>
-      <td>{{owner.surname}}</td>
-      <td><button class="btn btn-danger" (click)="deleteUser(owner)"> Delete User</button></td>
-    </tr>
+      <tr *ngFor="let owner of owners ">
+        <td>{{owner.id}}</td>
+        <td>{{owner.name}}</td>
+        <td>{{owner.surname}}</td>
+        <td><button class="btn btn-danger" (click)="deleteUser(owner)"> Delete User</button></td>
+      </tr>
     </tbody>
   </table>
+
+  <button class="btn btn-danger" (click)="showHideAddOwnerPanel()" > Add Owner </button>
+
+  <div *ngIf="isOwnerAddPanelVisible" >
+    <app-owner-form (zmiennaEksportujaca)="import($event)">></app-owner-form>
+  </div>
+
 </div>
