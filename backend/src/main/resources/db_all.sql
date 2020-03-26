@@ -6,14 +6,15 @@ DROP TABLE IF EXISTS owners;
 DROP TABLE IF EXISTS owners;
 CREATE TABLE owners(    id serial PRIMARY KEY,
                         name VARCHAR(255),
-                        surname VARCHAR(255) );
-INSERT INTO owners(name, surname)
+                        surname VARCHAR(255),
+                        email VARCHAR(255) );
+INSERT INTO owners(name, surname, email)
 VALUES
-('Jan', 'Kowalski'),
-('Wojtek', 'Strazak'),
-('Franek', 'Golas'),
-('Wojtek', 'BezPortek'),
-('Józek', 'Belka');
+('Jan', 'Kowalski', 'rraa@com.pl'),
+('Wojtek', 'Strazak', 'daa@com.pl'),
+('Franek', 'Golas',  'raa@com.pl'),
+('Wojtek', 'BezPortek',  'qwwqeaa@com.pl'),
+('Józek', 'Belka','aauuuu@com.pl');
 
 
 DROP TABLE IF EXISTS properties;

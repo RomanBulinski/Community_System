@@ -46,6 +46,11 @@
     <input [(ngModel)]="owner.surname" placeholder="Last name" name="lastName" class="form-control" id="lastName">
   </div>
 
+  <div class="form-group">
+    <label for="lastName">Email address:</label>
+    <input [(ngModel)]="owner.email" placeholder="Email" name="email" class="form-control" id="lastName">
+  </div>
+
   <button class="btn btn-success" (click)="createUserAndEmitMessage()">Create</button>
 </form>
 </div>

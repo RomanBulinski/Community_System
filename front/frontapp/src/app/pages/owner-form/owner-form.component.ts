@@ -12,6 +12,7 @@ export class OwnerFormComponent {
 
   owner: Owner = new Owner();
   showPanel = false;
+  //obiekt który mozn aprzekazac do kontneru rodzica
   @Output()
   exportContainer = new EventEmitter();
 

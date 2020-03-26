@@ -16,13 +16,15 @@ public class Owner {
     private Long id;
     private String name;
     private String surname;
+    private String email;
 
     public Owner() {
     }
 
-    public Owner( String name, String surname ) {
+    public Owner( String name, String surname, String email ) {
         this.name = name;
         this.surname = surname;
+        this.email = email;
     }
 
     public Long getId() {
@@ -49,6 +51,14 @@ public class Owner {
         this.surname = surname;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -56,12 +66,13 @@ public class Owner {
         Owner owner = (Owner) o;
         return Objects.equals(id, owner.id) &&
                 Objects.equals(name, owner.name) &&
-                Objects.equals(surname, owner.surname);
+                Objects.equals(surname, owner.surname) &&
+                Objects.equals(email, owner.email);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, surname);
+        return Objects.hash(id, name, surname, email);
     }
 
     @Override
@@ -70,8 +81,7 @@ public class Owner {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
+                ", email='" + email + '\'' +
                 '}';
     }
-
-
 }

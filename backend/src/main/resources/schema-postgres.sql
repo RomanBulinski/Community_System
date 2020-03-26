@@ -33,7 +33,8 @@ CREATE TABLE resolutions(id serial PRIMARY KEY,
 DROP TABLE IF EXISTS owners;
 CREATE TABLE owners(    id serial PRIMARY KEY,
                         name VARCHAR(255),
-                        surname VARCHAR(255) );
+                        surname VARCHAR(255),
+                        email VARCHAR(255) );
 
 DROP TABLE IF EXISTS properties;
 CREATE TABLE properties(id serial PRIMARY KEY,
