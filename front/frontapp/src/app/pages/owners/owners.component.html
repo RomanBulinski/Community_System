@@ -9,20 +9,31 @@
       <th>Surname</th>
     </tr>
     <tbody>
-      <tr *ngFor="let owner of owners ">
-        <td>{{owner.id}}</td>
-        <td>{{owner.name}}</td>
-        <td>{{owner.surname}}</td>
-        <td>{{owner.email}}</td>
-        <td><button class="btn btn-danger" (click)="deleteUser(owner)"> Delete User</button></td>
+    <ng-container *ngFor="let owner of owners; let i = index" >
+      <tr>
+
+          <td>{{i+1}}</td>
+          <td>{{owner.id}}</td>
+          <td>{{owner.name}}</td>
+          <td>{{owner.surname}}</td>
+          <td>{{owner.email}}</td>
+          <td><button class="btn btn-danger" (click)="deleteUser(owner)"> Delete Owner</button></td>
+          <td><button class="btn btn-danger" (click)="showHideModifyOwnerPanel(i)"> Modify Owner</button></td>
       </tr>
+      <tr>
+        <div *ngIf="i ===  positionIndeks " >
+          <app-owner-modify (exportContainer)="import($event)"> </app-owner-modify>
+        </div>
+      </tr>
+      </ng-container>
     </tbody>
   </table>
 
-  <button class="btn btn-danger" (click)="showHideAddOwnerPanel()" > Add Owner </button>
 
+  <button class="btn btn-danger" (click)="showHideAddOwnerPanel()" > Add Owner </button>
   <div *ngIf="isOwnerAddPanelVisible" >
     <app-owner-form (exportContainer)="import($event)"> </app-owner-form>
   </div>
 
 </div>
+

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {OwnersComponent} from "./pages/owners/owners.component";
 
-import {OwnerFormComponent} from "./pages/owner-form/owner-form.component";
+import {OwnerFormComponent} from "./components/owner-form/owner-form.component";
 import {ResolutionsComponent} from "./pages/resolutions/resolutions.component";
 import { PropertiesComponent } from './pages/properties/properties.component';
 import { PollsComponent } from './pages/polls/polls.component';

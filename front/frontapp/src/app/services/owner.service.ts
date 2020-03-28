@@ -21,11 +21,15 @@ export class OwnerService {
   }
 
   public deleteUser(owner) {
-    return this.http.delete(this.ownersUrl + "/"+ owner.id);
+    return this.http.delete(this.ownersUrl + "/" + owner.id);
   }
 
   public createOwner(owner: Owner) {
     return this.http.post<Owner>(this.ownersUrl, owner);
+  }
+
+  public modifyOwner(owner: Owner){
+    return this.http.put<Owner>(this.ownersUrl + "/" + owner.id, owner  );
   }
 
 }

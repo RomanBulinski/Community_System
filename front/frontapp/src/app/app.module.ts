@@ -7,7 +7,7 @@ import {OwnersComponent} from './pages/owners/owners.component';
 import {HttpClientModule} from '@angular/common/http';
 import {OwnerService} from './services/owner.service';
 
-import {OwnerFormComponent} from './pages/owner-form/owner-form.component';
+import {OwnerFormComponent} from './components/owner-form/owner-form.component';
 import {FormsModule} from '@angular/forms';
 import {NavComponent} from './nav/nav.component';
 import {ResolutionsComponent} from './pages/resolutions/resolutions.component';
@@ -17,7 +17,8 @@ import {PollFormComponent} from './pages/poll-form/poll-form.component';
 // import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { OwnerModifyComponent } from './components/owner-modify/owner-modify.component';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ResolutionsComponent,
     PropertiesComponent,
     PollsComponent,
-    PollFormComponent
+    PollFormComponent,
+    OwnerModifyComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     FormsModule,
     MatButtonToggleModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DragDropModule
   ],
   providers: [
     OwnerService,

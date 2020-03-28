@@ -1,4 +1,14 @@
 
+.flashing {
+  animation:blinkingText 2.1s infinite;
+}
+@keyframes blinkingText{
+  0%{     opacity: 1;   }
+  50%{    opacity: 0; }
+  100%{   opacity:1;   }
+}
+
+
 header {
   background: #7700ff;
 
@@ -18,9 +28,10 @@ header {
         float: left;
 
         a {
-          padding: 1.5em;
+          padding: 0.5em;
           text-transform: uppercase;
           font-size: 0.8em;
+          margin: 1em;
 
           &:hover {
             background: #c595ff;

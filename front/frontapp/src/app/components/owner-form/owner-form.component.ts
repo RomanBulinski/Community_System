@@ -19,7 +19,7 @@ export class OwnerFormComponent {
   constructor(private router: Router, private ownerService: OwnerService) {
   }
 
-  createUserAndEmitMessage(): void {
+  createOwnerAndEmitMessage(): void {
     this.ownerService.createOwner(this.owner)
       .subscribe( data => {
         alert('User created successfully.');
