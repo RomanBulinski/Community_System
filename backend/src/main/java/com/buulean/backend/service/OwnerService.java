@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class OwnerService implements IOwnerService {
@@ -39,8 +40,15 @@ public class OwnerService implements IOwnerService {
     }
 
     @Override
-    public Owner update(Owner owner) {
-        return null;
+    public Owner update(Owner owner, long id) {
+        Owner ownerFromRepository = ownerRepository.findById(id).get();
+        if (ownerFromRepository != null) {
+            owner.setId(id);
+            ownerRepository.save(owner);
+        }else{
+            return null;
+        }
+        return owner;
     }
 
 

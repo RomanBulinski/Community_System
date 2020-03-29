@@ -11,8 +11,6 @@
     <tbody>
     <ng-container *ngFor="let owner of owners; let i = index" >
       <tr>
-
-          <td>{{i+1}}</td>
           <td>{{owner.id}}</td>
           <td>{{owner.name}}</td>
           <td>{{owner.surname}}</td>
@@ -20,10 +18,13 @@
           <td><button class="btn btn-danger" (click)="deleteUser(owner)"> Delete Owner</button></td>
           <td><button class="btn btn-danger" (click)="showHideModifyOwnerPanel(i)"> Modify Owner</button></td>
       </tr>
-      <tr>
-        <div *ngIf="i ===  positionIndeks " >
-          <app-owner-modify (exportContainer)="import($event)"> </app-owner-modify>
-        </div>
+      <tr >
+        <td colspan="5">
+          <div *ngIf="i ===  positionIndeks "  >
+<!--            pzekazuje ownera do "komponentu dziecka"-->
+            <app-owner-modify [owner]="owner" > </app-owner-modify>
+          </div>
+        </td>
       </tr>
       </ng-container>
     </tbody>

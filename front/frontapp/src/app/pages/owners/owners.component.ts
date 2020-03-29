@@ -12,8 +12,6 @@ export class OwnersComponent implements OnInit {
 
   owners: Owner[];
   isOwnerAddPanelVisible = false;
-  isOwnerModifyPanelVisible = false;
-  indexOwnerForHide = -100;
   positionIndeks = -100;
 
   constructor(private router: Router, private ownerService: OwnerService ) { }
@@ -40,9 +38,8 @@ export class OwnersComponent implements OnInit {
     }
   }
 
-    import(odebranaZmienna) {
+  import(odebranaZmienna) {
     this.isOwnerAddPanelVisible = odebranaZmienna;
-    console.log(odebranaZmienna);
   }
 
   showHideModifyOwnerPanel( i: number) {

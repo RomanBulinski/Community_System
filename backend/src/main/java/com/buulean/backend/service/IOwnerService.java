@@ -14,6 +14,5 @@ public interface IOwnerService {
 
     Owner findById(int id);
 
-    Owner update(Owner owner);
-
+    Owner update(Owner owner, long id);
 }

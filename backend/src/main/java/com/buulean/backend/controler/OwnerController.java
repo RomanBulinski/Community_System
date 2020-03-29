@@ -3,9 +3,11 @@ package com.buulean.backend.controler;
 import com.buulean.backend.model.Owner;
 import com.buulean.backend.service.OwnerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 //@Controller
 
@@ -38,9 +40,14 @@ public class OwnerController {
         return ownerService.create(owner);
     }
 
-    @PutMapping
-    public Owner update(@RequestBody Owner owner){
-        return ownerService.update(owner);
+//    @PutMapping
+//    public Owner update(@RequestBody Owner owner){
+//        return ownerService.update(owner);
+//    }
+
+    @PutMapping(path ={"/{id}"})
+    public Owner update(@RequestBody Owner owner, @PathVariable long id) {
+        return ownerService.update(owner,id);
     }
 
 
