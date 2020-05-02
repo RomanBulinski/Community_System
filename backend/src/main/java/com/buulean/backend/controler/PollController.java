@@ -55,12 +55,6 @@ public class PollController {
         return pollService.create(poll);
     }
 
-
-
-
-
-
-//
 //    @DeleteMapping(path ={"/{id}"})
 //    public Property delete(@PathVariable("id") int id) {
 //        return PropertyService.delete(id);

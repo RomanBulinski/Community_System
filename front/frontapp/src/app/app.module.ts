@@ -13,12 +13,14 @@ import {NavComponent} from './nav/nav.component';
 import {ResolutionsComponent} from './pages/resolutions/resolutions.component';
 import {PropertiesComponent} from './pages/properties/properties.component';
 import {PollsComponent} from './pages/polls/polls.component';
-import {PollFormComponent} from './pages/poll-form/poll-form.component';
+import {VotingFormComponent} from './pages/voting-form/voting-form.component';
 // import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OwnerModifyComponent } from './components/owner-modify/owner-modify.component';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import {MatTableModule} from "@angular/material/table";
+import {MatSortModule} from "@angular/material/sort";
 
 @NgModule({
   declarations: [
@@ -29,7 +31,7 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     ResolutionsComponent,
     PropertiesComponent,
     PollsComponent,
-    PollFormComponent,
+    VotingFormComponent,
     OwnerModifyComponent
   ],
   imports: [
@@ -39,7 +41,9 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     FormsModule,
     MatButtonToggleModule,
     BrowserAnimationsModule,
-    DragDropModule
+    DragDropModule,
+    MatTableModule,
+    MatSortModule
   ],
   providers: [
     OwnerService,

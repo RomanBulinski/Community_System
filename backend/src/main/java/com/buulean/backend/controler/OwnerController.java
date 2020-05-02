@@ -3,9 +3,12 @@ package com.buulean.backend.controler;
 import com.buulean.backend.model.Owner;
 import com.buulean.backend.service.OwnerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import java.util.Optional;
 
@@ -17,11 +20,14 @@ import java.util.Optional;
 public class OwnerController {
 
     @Autowired
-    private OwnerService ownerService;
+    private OwnerService ownerService    ;
 
     @GetMapping()
-    public List<Owner> findOwners(){
+    public List<Owner> findOwners(HttpServletResponse response){
+
         List<Owner> owners = (List<Owner>) ownerService.findAll();
+        response.setStatus(201);
+
         return owners;
     }
 

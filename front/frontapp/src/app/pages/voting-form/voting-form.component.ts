@@ -10,10 +10,10 @@ import {Resolution} from '../../common/Resolution';
 
 @Component({
   selector: 'app-poll-form',
-  templateUrl: './poll-form.component.html',
-  styleUrls: ['./poll-form.component.scss']
+  templateUrl: './voting-form.component.html',
+  styleUrls: ['./voting-form.component.scss']
 })
-export class PollFormComponent implements OnInit {
+export class VotingFormComponent implements OnInit {
 
   polls: Poll[];
   properties: Property[];

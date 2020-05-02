@@ -2,9 +2,9 @@
 <h2> Properties / Własność / Nierychomość </h2>
 
 <table class="table table-striped">
-
   <tr>
     <th class="hidden">Id</th>
+    <th>owner</th>
     <th>type</th>
     <th>symbol</th>
     <th>area</th>
@@ -15,6 +15,7 @@
   <tbody>
   <tr *ngFor="let property of properties ">
     <td>{{property.id}}</td>
+    <td>{{property.ownerid}}</td>
     <td>{{property.type}}</td>
     <td>{{property.symbol}}</td>
     <td>{{property.area}}</td>
@@ -22,6 +23,55 @@
     <td>{{property.participation}}</td>
   </tr>
   </tbody>
-
 </table>
 </div>
+
+<h2> Properties / Własność / Nierychomość  !!!!!!!1 </h2>
+<!--<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">-->
+<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> id </th>
+    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="ownerid">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> ownerid </th>
+    <td mat-cell *matCellDef="let element"> {{element.ownerid}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="type">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> type </th>
+    <td mat-cell *matCellDef="let element"> {{element.type}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="symbol">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> symbol </th>
+    <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="area">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> area </th>
+    <td mat-cell *matCellDef="let element"> {{element.area}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="level">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> level </th>
+    <td mat-cell *matCellDef="let element"> {{element.level}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="participation">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> participation </th>
+    <td mat-cell *matCellDef="let element"> {{element.participation}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

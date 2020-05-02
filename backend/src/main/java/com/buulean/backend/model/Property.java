@@ -10,6 +10,7 @@ public class Property {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    private String ownerid;
     private String type;
     private String symbol;
     private Long area;
@@ -19,8 +20,9 @@ public class Property {
     public Property() {
     }
 
-    public Property(Long id, String type, String symbol, Long area, int level, int participation) {
+    public Property(Long id, String owner_d, String type, String symbol, Long area, int level, int participation) {
         this.id = id;
+        this.ownerid = ownerid;
         this.type = type;
         this.symbol = symbol;
         this.area = area;
@@ -76,6 +78,14 @@ public class Property {
         this.participation = participation;
     }
 
+    public String getOwnerid() {
+        return ownerid;
+    }
+
+    public void setOwnerid(String ownerid) {
+        this.ownerid = ownerid;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -84,6 +94,7 @@ public class Property {
         return level == property.level &&
                 participation == property.participation &&
                 Objects.equals(id, property.id) &&
+                Objects.equals(ownerid, property.ownerid) &&
                 Objects.equals(type, property.type) &&
                 Objects.equals(symbol, property.symbol) &&
                 Objects.equals(area, property.area);
@@ -91,13 +102,14 @@ public class Property {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, type, symbol, area, level, participation);
+        return Objects.hash(id, ownerid, type, symbol, area, level, participation);
     }
 
     @Override
     public String toString() {
         return "Property{" +
                 "id=" + id +
+                ", owneriid='" + ownerid + '\'' +
                 ", type='" + type + '\'' +
                 ", symbol='" + symbol + '\'' +
                 ", area=" + area +
@@ -105,6 +117,5 @@ public class Property {
                 ", participation=" + participation +
                 '}';
     }
-
 
 }

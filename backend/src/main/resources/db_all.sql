@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS roles;
+DROP TABLE IF EXISTS users;
 DROP TABLE IF EXISTS polls;
 DROP TABLE IF EXISTS resolutions;
 DROP TABLE IF EXISTS properties;
@@ -19,13 +21,13 @@ VALUES
 
 DROP TABLE IF EXISTS properties;
 CREATE TABLE properties(id serial PRIMARY KEY,
-                        owner_ID integer REFERENCES owners(id),
+                        ownerid integer REFERENCES owners(id),
                         type VARCHAR(255),
                         symbol VARCHAR(255),
                         area numeric,
                         level integer,
                         participation numeric );
-INSERT INTO properties( owner_ID, type , symbol , area , level , participation )
+INSERT INTO properties( ownerid, type , symbol , area , level , participation )
 VALUES
 (1,'apartment', 'm27', 60.21, 5, 6400),
 (2,'apartment', 'm27', 60.21, 5, 6300),
@@ -64,3 +66,26 @@ VALUES
 (3,2,'0'),
 (1,2,''),
 (3,3,'');
+
+DROP TABLE IF EXISTS users;
+CREATE TABLE users(     id serial PRIMARY KEY,
+                       name VARCHAR(25),
+                       surname VARCHAR(25),
+                       login VARCHAR(25),
+                       password VARCHAR(25),
+                       email VARCHAR(25));
+INSERT INTO users( name, surname, login, password, email )
+VALUES
+('a','a','a','a','a@gmail.com'),
+('b','b','b','b','b@gmail.com');
+
+DROP TABLE IF EXISTS roles;
+CREATE TABLE roles(     id serial PRIMARY KEY,
+                        owner_ID integer REFERENCES owners(id),
+                        roletype VARCHAR(25));
+INSERT INTO roles( owner_ID, roletype )
+VALUES
+(1,'superadmin'),
+(2,'manager'),
+(3,'member')
+(4,'member');

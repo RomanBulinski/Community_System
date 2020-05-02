@@ -52,3 +52,15 @@ CREATE TABLE polls(     id serial PRIMARY KEY,
                        ownerid integer,
                        vote VARCHAR(25));
 
+DROP TABLE IF EXISTS users;
+CREATE TABLE users(     id serial PRIMARY KEY,
+                       name VARCHAR(25),
+                       surname VARCHAR(25),
+                       login VARCHAR(25),
+                       password VARCHAR(25),
+                       email VARCHAR(25));
+
+DROP TABLE IF EXISTS roles;
+CREATE TABLE roles(     id serial PRIMARY KEY,
+                        owner_ID integer REFERENCES owners(id),
+                        roletype VARCHAR(25));
