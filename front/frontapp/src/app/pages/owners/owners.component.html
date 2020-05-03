@@ -4,37 +4,76 @@
   <table class="table table-striped">
 
     <tr>
-      <th class="hidden"> Id </th>
+      <th class="hidden"> Id</th>
       <th>Name</th>
       <th>Surname</th>
+      <th>Email</th>
     </tr>
     <tbody>
-    <ng-container *ngFor="let owner of owners; let i = index" >
+    <ng-container *ngFor="let owner of owners; let i = index">
       <tr>
-          <td>{{owner.id}}</td>
-          <td>{{owner.name}}</td>
-          <td>{{owner.surname}}</td>
-          <td>{{owner.email}}</td>
-          <td><button class="btn btn-danger" (click)="deleteUser(owner)"> Delete Owner</button></td>
-          <td><button class="btn btn-danger" (click)="showHideModifyOwnerPanel(i)"> Modify Owner</button></td>
+        <td>{{owner.id}}</td>
+        <td>{{owner.name}}</td>
+        <td>{{owner.surname}}</td>
+        <td>{{owner.email}}</td>
+        <td>
+          <button (click)="deleteUser(owner)" class="btn btn-danger"> Delete Owner</button>
+        </td>
+        <td>
+          <button (click)="showHideModifyOwnerPanel(i)" class="btn btn-danger"> Modify Owner</button>
+        </td>
       </tr>
-      <tr >
+      <tr>
         <td colspan="5">
-          <div *ngIf="i ===  positionIndeks "  >
-<!--            pzekazuje ownera do "komponentu dziecka"-->
-            <app-owner-modify [owner]="owner" > </app-owner-modify>
+          <div *ngIf="i ===  positionIndeks ">
+            <!--            pzekazuje ownera do "komponentu dziecka"-->
+            <app-owner-modify [owner]="owner"></app-owner-modify>
           </div>
         </td>
       </tr>
-      </ng-container>
+    </ng-container>
     </tbody>
   </table>
 
-
-  <button class="btn btn-danger" (click)="showHideAddOwnerPanel()" > Add Owner </button>
-  <div *ngIf="isOwnerAddPanelVisible" >
-    <app-owner-form (exportContainer)="import($event)"> </app-owner-form>
+  <button (click)="showHideAddOwnerPanel()" class="btn btn-danger"> Add Owner</button>
+  <div *ngIf="isOwnerAddPanelVisible">
+    <app-owner-form (exportContainer)="import($event)"></app-owner-form>
   </div>
-
 </div>
 
+
+<div>
+  <div>
+    <!--    <mat-form-field>-->
+    <!--      <mat-label>What's your name?</mat-label>-->
+    <!--      <label>-->
+    <!--        <input [(ngModel)]="name" matInput>-->
+    <!--      </label>-->
+    <!--    </mat-form-field>-->
+  </div>
+  <div>
+    <button (click)="openDialog()" mat-raised-button>Pick one</button>
+  </div>
+  <div *ngIf="animal">
+    You chose: <i>{{animal}}</i>
+  </div>
+</div>
+
+<div>
+  <mat-label>Input</mat-label>
+  <label>
+    <input matInput>
+  </label>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Select</mat-label>
+    <mat-select>
+      <mat-option value="option">Option</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Textarea</mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+</div>

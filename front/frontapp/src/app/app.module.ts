@@ -14,13 +14,20 @@ import {ResolutionsComponent} from './pages/resolutions/resolutions.component';
 import {PropertiesComponent} from './pages/properties/properties.component';
 import {PollsComponent} from './pages/polls/polls.component';
 import {VotingFormComponent} from './pages/voting-form/voting-form.component';
-// import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OwnerModifyComponent } from './components/owner-modify/owner-modify.component';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {MatTableModule} from "@angular/material/table";
 import {MatSortModule} from "@angular/material/sort";
+import {MatFormFieldControl, MatFormFieldModule} from "@angular/material/form-field";
+import {MatDialogModule} from "@angular/material/dialog";
+import {MatButtonModule} from "@angular/material/button";
+import { YesNoFormComponent } from './components/yes-no-form/yes-no-form.component';
+import {MatSelectModule} from "@angular/material/select";
+import {MatInputModule} from '@angular//material/input';
+
+
 
 @NgModule({
   declarations: [
@@ -32,7 +39,8 @@ import {MatSortModule} from "@angular/material/sort";
     PropertiesComponent,
     PollsComponent,
     VotingFormComponent,
-    OwnerModifyComponent
+    OwnerModifyComponent,
+    YesNoFormComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +51,16 @@ import {MatSortModule} from "@angular/material/sort";
     BrowserAnimationsModule,
     DragDropModule,
     MatTableModule,
-    MatSortModule
+    MatSortModule,
+    MatFormFieldModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatInputModule,
+  ],
+  exports: [
+    MatInputModule,
   ],
   providers: [
     OwnerService,

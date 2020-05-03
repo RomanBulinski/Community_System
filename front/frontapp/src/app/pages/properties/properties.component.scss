@@ -2,6 +2,12 @@ table {
   width: 100%;
 }
 
-th.mat-sort-header-sorted {
-  color: black;
+th.mat-header-cell {
+  color: white;
+  background-color: blue;
+}
+
+td{
+  background-color: white;
+  color: gray;
 }
