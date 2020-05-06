@@ -18,6 +18,7 @@
         <td>{{owner.email}}</td>
         <td>
           <button (click)="deleteUser(owner)" class="btn btn-danger"> Delete Owner</button>
+          <button (click)="openDialog()" mat-raised-button>Delete Owner</button>
         </td>
         <td>
           <button (click)="showHideModifyOwnerPanel(i)" class="btn btn-danger"> Modify Owner</button>
@@ -59,21 +60,21 @@
   </div>
 </div>
 
-<div>
-  <mat-label>Input</mat-label>
-  <label>
-    <input matInput>
-  </label>
-  <br>
-  <mat-form-field appearance="fill">
-    <mat-label>Select</mat-label>
-    <mat-select>
-      <mat-option value="option">Option</mat-option>
-    </mat-select>
-  </mat-form-field>
-  <br>
-  <mat-form-field appearance="fill">
-    <mat-label>Textarea</mat-label>
-    <textarea matInput></textarea>
-  </mat-form-field>
-</div>
+<!--<div>-->
+<!--  <mat-label>Input</mat-label>-->
+<!--  <label>-->
+<!--    <input matInput>-->
+<!--  </label>-->
+<!--  <br>-->
+<!--  <mat-form-field appearance="fill">-->
+<!--    <mat-label>Select</mat-label>-->
+<!--    <mat-select>-->
+<!--      <mat-option value="option">Option</mat-option>-->
+<!--    </mat-select>-->
+<!--  </mat-form-field>-->
+<!--  <br>-->
+<!--  <mat-form-field appearance="fill">-->
+<!--    <mat-label>Textarea</mat-label>-->
+<!--    <textarea matInput></textarea>-->
+<!--  </mat-form-field>-->
+<!--</div>-->
