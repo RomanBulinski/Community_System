@@ -12,6 +12,7 @@ import {YesNoFormComponent} from "../../components/yes-no-form/yes-no-form.compo
 })
 export class OwnersComponent implements OnInit {
 
+
   owners: Owner[];
   isOwnerAddPanelVisible = false;
   positionIndeks = -100;
@@ -52,18 +53,18 @@ export class OwnersComponent implements OnInit {
     }
   }
 
-  animal: string;
-  name: string;
-
-  openDialog(): void {
+  openDialog(owner: Owner): void {
     const dialogRef = this.dialog.open(YesNoFormComponent, {
       width: '250px',
-      data: {name: this.name, animal: this.animal}
+      data: {name: owner.name, surname: owner.surname},
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
-      this.animal = result;
+      if (result === true) {
+        this.deleteUser(owner);
+      }
+      ;
     });
   }
 
