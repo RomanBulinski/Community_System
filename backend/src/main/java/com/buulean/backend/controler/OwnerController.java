@@ -13,9 +13,9 @@ import java.util.List;
 import java.util.Optional;
 
 //@Controller
-
+@CrossOrigin
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/owners")
 public class OwnerController {
 

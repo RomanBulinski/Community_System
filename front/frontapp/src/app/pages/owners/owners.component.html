@@ -17,11 +17,8 @@
         <td>{{owner.surname}}</td>
         <td>{{owner.email}}</td>
         <td>
-          <button (click)="deleteUser(owner)" class="btn btn-danger"> Delete Owner</button>
-          <button (click)="openDialog(owner)" mat-raised-button>Delete Owner</button>
-        </td>
-        <td>
           <button (click)="showHideModifyOwnerPanel(i)" class="btn btn-danger"> Modify Owner</button>
+          <button (click)="openDialog(owner)" mat-raised-button>Delete Owner</button>
         </td>
       </tr>
       <tr>

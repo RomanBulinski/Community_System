@@ -3,67 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="dea8ce38-36ae-46a8-b894-92f6c1a2366b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/buulean/backend/controler/OwnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/buulean/backend/controler/OwnerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/pages/owners/owners.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/owners/owners.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/pages/owners/owners.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/owners/owners.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-    </expand>
-    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -233,7 +179,9 @@
       <workItem from="1588699319622" duration="295000" />
       <workItem from="1588778445732" duration="1691000" />
       <workItem from="1589051119405" duration="602000" />
-      <workItem from="1589090968636" duration="5982000" />
+      <workItem from="1589090968636" duration="9515000" />
+      <workItem from="1589465795658" duration="753000" />
+      <workItem from="1589467100478" duration="1308000" />
     </task>
     <task id="LOCAL-00001" summary="Copy backend file fro previous app">
       <created>1584191122973</created>
@@ -270,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588789432765</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Implemented Dialog for delete action in Owner">
+      <created>1589108062208</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1589108062208</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +249,8 @@
     <MESSAGE value="Added sorted table on front" />
     <MESSAGE value="Started add &quot;dialog&quot; to angular app" />
     <MESSAGE value="Temp commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Temp commit" />
+    <MESSAGE value="Implemented Dialog for delete action in Owner" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Dialog for delete action in Owner" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -302,15 +258,19 @@
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state x="279" y="27" width="808" height="705" key="#Intentions/0.27.1366.705@0.27.1366.705" timestamp="1588523511216" />
+    <state x="278" y="27" width="808" height="709" key="#Plugins" timestamp="1589467330664">
+      <screen x="0" y="27" width="1366" height="705" />
+    </state>
+    <state x="278" y="27" width="808" height="709" key="#Plugins/0.27.1366.705@0.27.1366.705" timestamp="1589467330664" />
     <state x="361" y="71" key="#Project_Structure" timestamp="1584189117255">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1584189117255" />
-    <state x="111" y="88" width="1199" height="609" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588699235068">
+    <state x="111" y="88" width="1199" height="609" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589128285934">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state x="253" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1584190249753" />
-    <state x="111" y="88" width="1199" height="609" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.705@0.27.1366.705" timestamp="1588699235068" />
+    <state x="111" y="88" width="1199" height="609" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.705@0.27.1366.705" timestamp="1589128285934" />
     <state x="415" y="180" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588513088757">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
@@ -327,56 +287,56 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="113" y="171" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1584191707403" />
-    <state x="244" y="27" width="1047" height="705" key="CommitChangelistDialog2" timestamp="1588789432407">
+    <state x="239" y="27" width="1047" height="705" key="CommitChangelistDialog2" timestamp="1589108061765">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state x="274" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584191352386" />
-    <state x="244" y="27" width="1047" height="705" key="CommitChangelistDialog2/0.27.1366.705@0.27.1366.705" timestamp="1588789432407" />
+    <state x="239" y="27" width="1047" height="705" key="CommitChangelistDialog2/0.27.1366.705@0.27.1366.705" timestamp="1589108061765" />
     <state x="488" y="118" width="432" height="487" key="FileChooserDialogImpl" timestamp="1589091097040">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state x="549" y="106" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584191978206" />
     <state x="488" y="118" width="432" height="487" key="FileChooserDialogImpl/0.27.1366.705@0.27.1366.705" timestamp="1589091097040" />
-    <state width="1320" height="289" key="GridCell.Tab.0.bottom" timestamp="1589105914499">
+    <state width="1320" height="219" key="GridCell.Tab.0.bottom" timestamp="1589467182031">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state width="1133" height="291" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584192145912" />
-    <state width="1320" height="289" key="GridCell.Tab.0.bottom/0.27.1366.705@0.27.1366.705" timestamp="1589105914499" />
-    <state width="1320" height="289" key="GridCell.Tab.0.center" timestamp="1589105914497">
+    <state width="1320" height="219" key="GridCell.Tab.0.bottom/0.27.1366.705@0.27.1366.705" timestamp="1589467182031" />
+    <state width="1320" height="219" key="GridCell.Tab.0.center" timestamp="1589467182030">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state width="1133" height="291" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584192145912" />
-    <state width="1320" height="289" key="GridCell.Tab.0.center/0.27.1366.705@0.27.1366.705" timestamp="1589105914497" />
-    <state width="1320" height="289" key="GridCell.Tab.0.left" timestamp="1589105914496">
+    <state width="1320" height="219" key="GridCell.Tab.0.center/0.27.1366.705@0.27.1366.705" timestamp="1589467182030" />
+    <state width="1320" height="219" key="GridCell.Tab.0.left" timestamp="1589467182029">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state width="1133" height="291" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584192145912" />
-    <state width="1320" height="289" key="GridCell.Tab.0.left/0.27.1366.705@0.27.1366.705" timestamp="1589105914496" />
-    <state width="1320" height="289" key="GridCell.Tab.0.right" timestamp="1589105914497">
+    <state width="1320" height="219" key="GridCell.Tab.0.left/0.27.1366.705@0.27.1366.705" timestamp="1589467182029" />
+    <state width="1320" height="219" key="GridCell.Tab.0.right" timestamp="1589467182031">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state width="1133" height="291" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584192145912" />
-    <state width="1320" height="289" key="GridCell.Tab.0.right/0.27.1366.705@0.27.1366.705" timestamp="1589105914497" />
-    <state width="1320" height="176" key="GridCell.Tab.1.bottom" timestamp="1589091619185">
+    <state width="1320" height="219" key="GridCell.Tab.0.right/0.27.1366.705@0.27.1366.705" timestamp="1589467182031" />
+    <state width="1320" height="219" key="GridCell.Tab.1.bottom" timestamp="1589467182033">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state width="1493" height="215" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584191844087" />
-    <state width="1320" height="176" key="GridCell.Tab.1.bottom/0.27.1366.705@0.27.1366.705" timestamp="1589091619185" />
-    <state width="1320" height="176" key="GridCell.Tab.1.center" timestamp="1589091619184">
+    <state width="1320" height="219" key="GridCell.Tab.1.bottom/0.27.1366.705@0.27.1366.705" timestamp="1589467182033" />
+    <state width="1320" height="219" key="GridCell.Tab.1.center" timestamp="1589467182032">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state width="1493" height="215" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1584191844087" />
-    <state width="1320" height="176" key="GridCell.Tab.1.center/0.27.1366.705@0.27.1366.705" timestamp="1589091619184" />
-    <state width="1320" height="176" key="GridCell.Tab.1.left" timestamp="1589091619184">
+    <state width="1320" height="219" key="GridCell.Tab.1.center/0.27.1366.705@0.27.1366.705" timestamp="1589467182032" />
+    <state width="1320" height="219" key="GridCell.Tab.1.left" timestamp="1589467182032">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state width="1493" height="215" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1584191844087" />
-    <state width="1320" height="176" key="GridCell.Tab.1.left/0.27.1366.705@0.27.1366.705" timestamp="1589091619184" />
-    <state width="1320" height="176" key="GridCell.Tab.1.right" timestamp="1589091619185">
+    <state width="1320" height="219" key="GridCell.Tab.1.left/0.27.1366.705@0.27.1366.705" timestamp="1589467182032" />
+    <state width="1320" height="219" key="GridCell.Tab.1.right" timestamp="1589467182032">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state width="1493" height="215" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1584191844087" />
-    <state width="1320" height="176" key="GridCell.Tab.1.right/0.27.1366.705@0.27.1366.705" timestamp="1589091619185" />
+    <state width="1320" height="219" key="GridCell.Tab.1.right/0.27.1366.705@0.27.1366.705" timestamp="1589467182032" />
     <state width="1320" height="178" key="GridCell.Tab.2.bottom" timestamp="1588699617595">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
@@ -413,11 +373,11 @@
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state x="203" y="27" width="1005" height="709" key="SettingsEditor/0.27.1366.705@0.27.1366.705" timestamp="1588698895353" />
-    <state x="321" y="152" width="808" height="531" key="Vcs.Push.Dialog.v2" timestamp="1588789456794">
+    <state x="321" y="152" width="808" height="531" key="Vcs.Push.Dialog.v2" timestamp="1589108097981">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584191383712" />
-    <state x="321" y="152" width="808" height="531" key="Vcs.Push.Dialog.v2/0.27.1366.705@0.27.1366.705" timestamp="1588789456794" />
+    <state x="321" y="152" width="808" height="531" key="Vcs.Push.Dialog.v2/0.27.1366.705@0.27.1366.705" timestamp="1589108097981" />
     <state x="282" y="213" key="com.intellij.ide.util.TipDialog" timestamp="1584191860796">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -426,10 +386,10 @@
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state x="439" y="56" width="853" height="650" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.27.1366.705@0.27.1366.705" timestamp="1588699040955" />
-    <state x="387" y="122" width="592" height="522" key="find.popup" timestamp="1589105852073">
+    <state x="387" y="122" width="592" height="522" key="find.popup" timestamp="1589128938965">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state x="387" y="122" width="592" height="522" key="find.popup/0.27.1366.705@0.27.1366.705" timestamp="1589105852073" />
+    <state x="387" y="122" width="592" height="522" key="find.popup/0.27.1366.705@0.27.1366.705" timestamp="1589128938965" />
     <state x="209" y="0" key="new project wizard" timestamp="1584189233615">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
