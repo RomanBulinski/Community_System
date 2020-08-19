@@ -19,7 +19,6 @@ public class PollService implements IPollService {
     @Autowired
     private PollRepository pollRepository;
 
-
     @Override
     public List<Poll> findAll() {
         return pollRepository.findAll();

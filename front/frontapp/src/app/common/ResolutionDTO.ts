@@ -1,4 +1,4 @@
-export class Resolution {
+export class ResolutionDTO {
   id: number;
   symbol: string;
   title: string;

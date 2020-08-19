@@ -26,6 +26,7 @@ import {MatButtonModule} from "@angular/material/button";
 import { YesNoFormComponent } from './components/yes-no-form/yes-no-form.component';
 import {MatSelectModule} from "@angular/material/select";
 import {MatInputModule} from '@angular//material/input';
+import {AngularFileUploaderModule} from "angular-file-uploader";
 
 
 
@@ -58,6 +59,7 @@ import {MatInputModule} from '@angular//material/input';
     MatSelectModule,
     MatFormFieldModule,
     MatInputModule,
+    AngularFileUploaderModule,
   ],
   exports: [
     MatInputModule,

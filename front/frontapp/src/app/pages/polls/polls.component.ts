@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import {Property} from '../../common/Property';
+import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {PropertyService} from '../../services/property.service';
-import { Poll } from 'src/app/common/Poll';
-import { PollService } from 'src/app/services/poll.service';
+import {PollService} from 'src/app/services/poll.service';
 import {OwnerService} from '../../services/owner.service';
-import {Owner} from "../../common/owner";
 import {PollOnFront} from "../../common/PollOnFront";
+import {OwnerDTO} from "../../common/OwnerDTO";
+import {PollDTO} from "../../common/PollDTO";
+import {PropertyDTO} from "../../common/PropertyDTO";
 
 @Component({
   selector: 'app-polls',
@@ -15,13 +15,14 @@ import {PollOnFront} from "../../common/PollOnFront";
 })
 export class PollsComponent implements OnInit {
 
-  polls: Poll[];
-  owners: Owner[];
-  properties: Property[];
+  polls: PollDTO[];
+  owners: OwnerDTO[];
+  properties: PropertyDTO[];
 
   // tworze nowa liste z danymi o glosowaniach w ktorej podmieniono idki z bazy na imiona/nazwy
-  // czyli zamiast obiektów Poll przechowuje tam obiekty PollOnFront do prezentowania na froncie
-  pollsOnFront: PollOnFront[] = [];;
+  // czyli zamiast obiektów PollDTO przechowuje tam obiekty PollOnFront do prezentowania na froncie
+  pollsOnFront: PollOnFront[] = [];
+;
 
   constructor(private router: Router,
               private pollService: PollService,

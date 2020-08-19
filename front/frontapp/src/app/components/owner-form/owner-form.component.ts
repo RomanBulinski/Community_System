@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Output} from '@angular/core';
 import { Router} from '@angular/router';
-import {Owner} from '../../common/owner';
 import {OwnerService} from '../../services/owner.service';
+import {OwnerDTO} from "../../common/OwnerDTO";
 
 @Component({
   selector: 'app-owner-form',
@@ -10,7 +10,7 @@ import {OwnerService} from '../../services/owner.service';
 })
 export class OwnerFormComponent {
 
-  owner: Owner = new Owner();
+  owner: OwnerDTO = new OwnerDTO();
   showPanel = false;
   //obiekt który mozn aprzekazac do kontneru rodzica
   @Output()

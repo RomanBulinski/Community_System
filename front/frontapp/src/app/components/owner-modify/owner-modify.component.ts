@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Owner} from '../../common/owner';
 import {OwnerService} from '../../services/owner.service';
+import {OwnerDTO} from "../../common/OwnerDTO";
+
 
 @Component({
   selector: 'app-owner-modify',
@@ -10,7 +11,7 @@ import {OwnerService} from '../../services/owner.service';
 export class OwnerModifyComponent implements OnInit {
 
   // odbieram ownera z komponeneu rodzica
-  @Input() owner: Owner;
+  @Input() owner: OwnerDTO;
 
   constructor(private ownerService: OwnerService) { }
 
@@ -20,7 +21,7 @@ export class OwnerModifyComponent implements OnInit {
   modifyOwner(): void {
     this.ownerService.modifyOwner(this.owner)
       .subscribe( data => {
-        alert('Owner modifeid successfully.');
+        alert('OwnerDTO modifeid successfully.');
       });
     location.assign('/owners_action');
   }

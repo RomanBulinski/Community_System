@@ -1,8 +1,11 @@
+<angular-file-uploader
+  [config]="afuConfig">
+  <!--  (ApiResponse)="DocUpload($event)">-->
+</angular-file-uploader>
+
 <div class="col-md-6">
   <h2> Owners / Właściciele</h2>
-
   <table class="table table-striped">
-
     <tr>
       <th class="hidden"> Id</th>
       <th>Name</th>
@@ -17,8 +20,8 @@
         <td>{{owner.surname}}</td>
         <td>{{owner.email}}</td>
         <td>
-          <button (click)="showHideModifyOwnerPanel(i)" class="btn btn-danger"> Modify Owner</button>
-          <button (click)="openDialog(owner)" mat-raised-button>Delete Owner</button>
+          <button (click)="showHideModifyOwnerPanel(i)" class="btn btn-danger"> Modify OwnerDTO</button>
+          <button (click)="openDialog(owner)" mat-raised-button>Delete OwnerDTO</button>
         </td>
       </tr>
       <tr>
@@ -32,8 +35,7 @@
     </ng-container>
     </tbody>
   </table>
-
-  <button (click)="showHideAddOwnerPanel()" class="btn btn-danger"> Add Owner</button>
+  <button (click)="showHideAddOwnerPanel()" class="btn btn-danger"> Add OwnerDTO</button>
   <div *ngIf="isOwnerAddPanelVisible">
     <app-owner-form (exportContainer)="import($event)"></app-owner-form>
   </div>

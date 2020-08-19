@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {PollService} from '../../services/poll.service';
-import {Poll} from '../../common/Poll';
-import {Property} from '../../common/Property';
 import {PropertyService} from '../../services/property.service';
-import { ActivatedRoute } from '@angular/router';
+import {ActivatedRoute} from '@angular/router';
 import {ResolutionService} from '../../services/resolution.service';
-import {Resolution} from '../../common/Resolution';
+import {PollDTO} from "../../common/PollDTO";
+import {PropertyDTO} from "../../common/PropertyDTO";
+import {ResolutionDTO} from "../../common/ResolutionDTO";
 
 @Component({
   selector: 'app-poll-form',
@@ -15,17 +15,17 @@ import {Resolution} from '../../common/Resolution';
 })
 export class VotingFormComponent implements OnInit {
 
-  polls: Poll[];
-  properties: Property[];
+  polls: PollDTO[];
+  properties: PropertyDTO[];
   resolutionID = '';
-  res: Resolution;
+  res: ResolutionDTO;
   resulutionSymbol = '';
   resulutionTitle = '';
   resulutionYear = '2017';
 
   co = 'NIE';
 
-  poll: Poll = new Poll();
+  poll: PollDTO = new PollDTO();
   // nie = 'NIE';
   // [value]=valueFromToggle;
   // valueFromToggle={valu}
@@ -63,14 +63,14 @@ export class VotingFormComponent implements OnInit {
   // metoda do zapisu w BD nowego głosu nad daną uchwałą
   createPoll( propertyId: number, value: string ): void {
 
-    const poll = new Poll();
+    const poll = new PollDTO();
     poll.resolutionid = this.resolutionID;
     poll.propertyid = propertyId;
     poll.vote = value;
 
     this.pollService.createPoll(poll)
       .subscribe( data => {
-        // alert('Poll created successfully.');
+        // alert('PollDTO created successfully.');
       });
   }
 

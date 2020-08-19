@@ -1,9 +1,9 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-import {Owner} from '../../common/owner';
 import {OwnerService} from '../../services/owner.service';
 import {MatDialog} from '@angular/material/dialog';
 import {YesNoFormComponent} from "../../components/yes-no-form/yes-no-form.component";
+import {OwnerDTO} from "../../common/OwnerDTO";
 
 @Component({
   selector: 'app-owners',
@@ -13,7 +13,7 @@ import {YesNoFormComponent} from "../../components/yes-no-form/yes-no-form.compo
 export class OwnersComponent implements OnInit {
 
 
-  owners: Owner[];
+  owners: OwnerDTO[];
   isOwnerAddPanelVisible = false;
   positionIndeks = -100;
 
@@ -26,9 +26,9 @@ export class OwnersComponent implements OnInit {
       });
   }
 
-  deleteUser(owner: Owner ): void {
+  deleteUser(owner: OwnerDTO): void {
     this.ownerService.deleteUser(owner)
-      .subscribe( data => {
+      .subscribe(data => {
         this.owners = this.owners.filter(u => u !== owner);
       });
   }
@@ -53,7 +53,7 @@ export class OwnersComponent implements OnInit {
     }
   }
 
-  openDialog(owner: Owner): void {
+  openDialog(owner: OwnerDTO): void {
     const dialogRef = this.dialog.open(YesNoFormComponent, {
       width: '250px',
       data: {name: owner.name, surname: owner.surname},
@@ -67,6 +67,43 @@ export class OwnersComponent implements OnInit {
       ;
     });
   }
+
+  afuConfig = {
+    multiple: false,
+    formatsAllowed: ".jpg,.png",
+    maxSize: "1",
+    uploadAPI: {
+      url: "https://example-file-upload-api",
+      //     // method:"POST",
+      //     // headers: {
+      //     //   "Content-Type" : "text/plain;charset=UTF-8",
+      //     //   "Authorization" : `Bearer ${token}`
+      //     // },
+      //     // params: {
+      //     //   'page': '1'
+      //     // },
+      //     responseType: 'blob',
+    },
+    //   // theme: "dragNDrop",
+    hideProgressBar: true,
+    hideResetBtn: true,
+    hideSelectBtn: false,
+    fileNameIndex: false,
+    replaceTexts: {
+      selectFileBtn: 'Znajdz plik',
+      //     resetBtn: 'Reset',
+      uploadBtn: 'Załaduj',
+      //     dragNDropBox: 'Drag N Drop',
+      //     attachPinBtn: 'Attach Files...',
+      //     afterUploadMsg_success: 'Successfully Uploaded !',
+      //     afterUploadMsg_error: 'Upload Failed !',
+      //     sizeLimit: 'Size Limit'
+    }
+  };
+
+  // DocUpload($event){
+  //   alert( $event )
+  // }
 
 }
 

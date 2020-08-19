@@ -1,4 +1,4 @@
-export class Poll {
+export class PollDTO {
   id: string;
   resolutionid: string;
   propertyid: number;

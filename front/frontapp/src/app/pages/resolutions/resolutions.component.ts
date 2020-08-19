@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {Resolution} from "../../common/Resolution";
 import {Router} from "@angular/router";
 import {ResolutionService} from "../../services/resolution.service";
-import {Owner} from "../../common/owner";
+import {ResolutionDTO} from "../../common/ResolutionDTO";
+
 
 @Component({
   selector: 'app-resolutions',
@@ -11,7 +11,7 @@ import {Owner} from "../../common/owner";
 })
 export class ResolutionsComponent implements OnInit {
 
-  resolutions: Resolution[];
+  resolutions: ResolutionDTO[];
   resolutionID: string;
   location: any;
 
@@ -25,14 +25,12 @@ export class ResolutionsComponent implements OnInit {
       });
   }
 
-  goForVote( resolution: Resolution ){
-       location.assign('/poll_form?resolutionID=' + resolution.id);
+  goForVote(resolution: ResolutionDTO) {
+    location.assign('/poll_form?resolutionID=' + resolution.id);
   }
 
 
-
-
-  // deleteUser(owner: Owner): void {
+  // deleteUser(owner: OwnerDTO): void {
   //   this.ownerService.deleteUser(owner)
   //     .subscribe(data => {
   //       this.owners = this.owners.filter(u => u !== owner);

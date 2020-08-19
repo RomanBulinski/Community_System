@@ -1,9 +1,10 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
-import {Owner} from "../common/owner";
+import {OwnerDTO} from "../common/OwnerDTO";
+
 
 const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  headers: new HttpHeaders({'Content-Type': 'application/json'})
 };
 
 @Injectable({
@@ -17,19 +18,19 @@ export class OwnerService {
   private ownersUrl = 'http://localhost:8080/owners';
 
   public getOwners() {
-    return this.http.get<Owner[]>(this.ownersUrl);
+    return this.http.get<OwnerDTO[]>(this.ownersUrl);
   }
 
   public deleteUser(owner) {
     return this.http.delete(this.ownersUrl + "/" + owner.id);
   }
 
-  public createOwner(owner: Owner) {
-    return this.http.post<Owner>(this.ownersUrl, owner);
+  public createOwner(owner: OwnerDTO) {
+    return this.http.post<OwnerDTO>(this.ownersUrl, owner);
   }
 
-  public modifyOwner(owner: Owner){
-    return this.http.put<Owner>(this.ownersUrl + "/" + owner.id, owner  );
+  public modifyOwner(owner: OwnerDTO) {
+    return this.http.put<OwnerDTO>(this.ownersUrl + "/" + owner.id, owner);
   }
 
 }

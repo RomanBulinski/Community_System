@@ -1,8 +1,6 @@
 package com.buulean.backend.service;
 
-import com.buulean.backend.model.Owner;
 import com.buulean.backend.model.User;
-import com.buulean.backend.repository.OwnerRepository;
 import com.buulean.backend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -7,5 +7,17 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="MySQL - @3.125.29.122" uuid="94e09690-0b5e-4184-9938-bdc0e5e5f807">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://3.125.29.122:3306/mysql</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="aws" uuid="3b3b532c-7a93-4fa9-ae60-054571163785">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://ls-4681eb3b3fa48689bcabc750ca9e844433a5b095.czjxkhza80kw.eu-central-1.rds.amazonaws.com:3306/mysql</jdbc-url>
+    </data-source>
   </component>
 </project>
