@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {OwnerDTO} from "../common/OwnerDTO";
+import {Observable} from "rxjs";
 
 
 const httpOptions = {
@@ -21,7 +22,7 @@ export class OwnerService {
     return this.http.get<OwnerDTO[]>(this.ownersUrl);
   }
 
-  public deleteUser(owner) {
+  public deleteUser(owner): Observable<any> {
     return this.http.delete(this.ownersUrl + "/" + owner.id);
   }
 

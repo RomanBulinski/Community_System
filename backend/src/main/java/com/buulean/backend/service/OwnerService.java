@@ -16,6 +16,7 @@ public class OwnerService implements IOwnerService {
 
     @Override
     public List<Owner> findAll() {
+
         return (List<Owner>) ownerRepository.findAll();
     }
 
