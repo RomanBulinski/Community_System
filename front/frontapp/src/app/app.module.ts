@@ -27,6 +27,7 @@ import { YesNoFormComponent } from './components/yes-no-form/yes-no-form.compone
 import {MatSelectModule} from "@angular/material/select";
 import {MatInputModule} from '@angular//material/input';
 import {AngularFileUploaderModule} from "angular-file-uploader";
+import {DocumentsComponent} from './pages/documents/documents.component';
 
 
 
@@ -41,7 +42,8 @@ import {AngularFileUploaderModule} from "angular-file-uploader";
     PollsComponent,
     VotingFormComponent,
     OwnerModifyComponent,
-    YesNoFormComponent
+    YesNoFormComponent,
+    DocumentsComponent
   ],
   imports: [
     BrowserModule,

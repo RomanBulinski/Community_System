@@ -17,11 +17,14 @@ export class OwnersComponent implements OnInit {
   isOwnerAddPanelVisible = false;
   positionIndeks = -100;
 
-  constructor(private router: Router, private ownerService: OwnerService, public dialog: MatDialog ) { }
+  constructor(private router: Router,
+              private ownerService: OwnerService,
+              public dialog: MatDialog) {
+  }
 
   ngOnInit() {
     this.ownerService.getOwners()
-      .subscribe( data => {
+      .subscribe(data => {
         this.owners = data;
       });
   }

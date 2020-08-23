@@ -1,0 +1,22 @@
+<p>Dokumenty</p>
+
+<div>{{documents}}</div>
+<div>{{documents[0].id}}</div>
+<div>{{documents[0].file_name}}</div>
+<div>{{documents[1].file_type}}</div>
+<div>xxxxxxxxxx</div>
+<div>A+{{documents[1].file_data}}</div>
+<div>B+{{fileData}}</div>
+<div>xxxxxxxxxx</div>
+
+<div>
+  <input type="file" (change)="findFile($event)" value="Find file">
+</div>
+<div>
+  <input type="button" (click)="onUploadFile()" value="Upload file to DB">
+</div>
+
+<div>
+  <input type="button" (click)="getDocument()" value="Load document">
+</div>
+

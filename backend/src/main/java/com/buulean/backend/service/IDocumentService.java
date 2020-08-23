@@ -10,8 +10,7 @@ public interface IDocumentService {
 
     Document findById(int id);
 
-    //    Document delete(long id);
-    Document create(Document document);
+    Document save(Document document);
 
 
 }

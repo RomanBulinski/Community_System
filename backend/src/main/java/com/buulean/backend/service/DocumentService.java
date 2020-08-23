@@ -1,12 +1,13 @@
 package com.buulean.backend.service;
 
 import com.buulean.backend.model.Document;
-import com.buulean.backend.model.Owner;
 import com.buulean.backend.repository.DocumentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class DocumentService implements IDocumentService {
 
     @Autowired
@@ -24,7 +25,7 @@ public class DocumentService implements IDocumentService {
     }
 
     @Override
-    public Document create(Document document) {
+    public Document save(Document document) {
         return documentRepository.save(document);
     }
 

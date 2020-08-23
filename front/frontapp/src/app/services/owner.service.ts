@@ -16,22 +16,22 @@ export class OwnerService {
 
   constructor(private http:HttpClient) { }
 
-  private ownersUrl = 'http://localhost:8080/owners';
+  private OWNERS_URL = 'http://localhost:8080/owners';
 
   public getOwners() {
-    return this.http.get<OwnerDTO[]>(this.ownersUrl);
+    return this.http.get<OwnerDTO[]>(this.OWNERS_URL);
   }
 
   public deleteUser(owner): Observable<any> {
-    return this.http.delete(this.ownersUrl + "/" + owner.id);
+    return this.http.delete(this.OWNERS_URL + "/" + owner.id);
   }
 
   public createOwner(owner: OwnerDTO) {
-    return this.http.post<OwnerDTO>(this.ownersUrl, owner);
+    return this.http.post<OwnerDTO>(this.OWNERS_URL, owner);
   }
 
   public modifyOwner(owner: OwnerDTO) {
-    return this.http.put<OwnerDTO>(this.ownersUrl + "/" + owner.id, owner);
+    return this.http.put<OwnerDTO>(this.OWNERS_URL + "/" + owner.id, owner);
   }
 
 }
