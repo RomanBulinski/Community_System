@@ -12,6 +12,7 @@ import java.util.List;
     /*
     Resolution - Uchwała
     Property - nieruchomość, własność
+    Poll - głosowanie
     */
 
 @RestController

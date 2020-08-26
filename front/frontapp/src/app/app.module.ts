@@ -29,8 +29,6 @@ import {MatInputModule} from '@angular//material/input';
 import {AngularFileUploaderModule} from "angular-file-uploader";
 import {DocumentsComponent} from './pages/documents/documents.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,

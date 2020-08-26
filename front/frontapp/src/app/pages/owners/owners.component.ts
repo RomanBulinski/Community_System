@@ -12,7 +12,6 @@ import {OwnerDTO} from "../../common/OwnerDTO";
 })
 export class OwnersComponent implements OnInit {
 
-
   owners: OwnerDTO[];
   isOwnerAddPanelVisible = false;
   positionIndeks = -100;
@@ -70,43 +69,6 @@ export class OwnersComponent implements OnInit {
       ;
     });
   }
-
-  afuConfig = {
-    multiple: false,
-    formatsAllowed: ".jpg,.png",
-    maxSize: "1",
-    uploadAPI: {
-      url: "https://example-file-upload-api",
-      //     // method:"POST",
-      //     // headers: {
-      //     //   "Content-Type" : "text/plain;charset=UTF-8",
-      //     //   "Authorization" : `Bearer ${token}`
-      //     // },
-      //     // params: {
-      //     //   'page': '1'
-      //     // },
-      //     responseType: 'blob',
-    },
-    //   // theme: "dragNDrop",
-    hideProgressBar: true,
-    hideResetBtn: true,
-    hideSelectBtn: false,
-    fileNameIndex: false,
-    replaceTexts: {
-      selectFileBtn: 'Znajdz plik',
-      //     resetBtn: 'Reset',
-      uploadBtn: 'Załaduj',
-      //     dragNDropBox: 'Drag N Drop',
-      //     attachPinBtn: 'Attach Files...',
-      //     afterUploadMsg_success: 'Successfully Uploaded !',
-      //     afterUploadMsg_error: 'Upload Failed !',
-      //     sizeLimit: 'Size Limit'
-    }
-  };
-
-  // DocUpload($event){
-  //   alert( $event )
-  // }
 
 }
 
