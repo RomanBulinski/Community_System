@@ -1,4 +1,4 @@
-package com.buulean.backend.dbLoader;
+package com.buulean.backend.loader;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

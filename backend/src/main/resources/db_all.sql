@@ -19,6 +19,9 @@ VALUES
 ('Józek', 'Belka','aauuuu@com.pl');
 
 
+
+
+
 DROP TABLE IF EXISTS properties;
 CREATE TABLE properties(id serial PRIMARY KEY,
                         ownerid integer REFERENCES owners(id),
