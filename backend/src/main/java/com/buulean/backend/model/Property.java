@@ -14,8 +14,8 @@ public class Property {
     private String type;
     private String symbol;
     private Long area;
-    private int level;
-    private int participation;
+    private Integer level;
+    private Integer participation;
 
     public Property() {
     }
@@ -62,7 +62,7 @@ public class Property {
         this.area = area;
     }
 
-    public int getLevel() {
+    public Integer getLevel() {
         return level;
     }
 
@@ -117,5 +117,4 @@ public class Property {
                 ", participation=" + participation +
                 '}';
     }
-
 }
