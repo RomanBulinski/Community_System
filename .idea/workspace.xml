@@ -23,12 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dea8ce38-36ae-46a8-b894-92f6c1a2366b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/buulean/backend/dbInfiller/SQLDataCreater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/buulean/backend/BackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/buulean/backend/BackendApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/buulean/backend/dbLoader/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/buulean/backend/loader/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/buulean/backend/model/Owner.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/buulean/backend/model/Owner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/buulean/backend/dbInfiller/SQLDataCreater.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/buulean/backend/dbInfiller/SQLDataCreater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/resources/db_all.sql" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/db_all.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,15 +95,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.BackendApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -262,7 +256,8 @@
       <workItem from="1598704023259" duration="1068000" />
       <workItem from="1598728260260" duration="1464000" />
       <workItem from="1598808968601" duration="2430000" />
-      <workItem from="1598886456158" duration="10375000" />
+      <workItem from="1598886456158" duration="10617000" />
+      <workItem from="1598981759008" duration="4810000" />
     </task>
     <task id="LOCAL-00001" summary="Copy backend file fro previous app">
       <created>1584191122973</created>
@@ -348,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598811853962</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Prepared data for SQL queries">
+      <created>1598899859458</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1598899859458</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +381,8 @@
     <MESSAGE value="Started upload and load file from DB" />
     <MESSAGE value="Removed unused class" />
     <MESSAGE value="Load csv file method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Load csv file method" />
+    <MESSAGE value="Prepared data for SQL queries" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prepared data for SQL queries" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -403,10 +406,14 @@
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state x="417" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1366.705@0.27.1366.705" timestamp="1598463336964" />
-    <state x="216" y="80" width="1047" height="602" key="CommitChangelistDialog2" timestamp="1598811853688">
+    <state x="709" y="387" width="482" height="345" key="#xdebugger.evaluate" timestamp="1598982555117">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state x="216" y="80" width="1047" height="602" key="CommitChangelistDialog2/0.27.1366.705@0.27.1366.705" timestamp="1598811853688" />
+    <state x="709" y="387" width="482" height="345" key="#xdebugger.evaluate/0.27.1366.705@0.27.1366.705" timestamp="1598982555117" />
+    <state x="216" y="80" width="1047" height="602" key="CommitChangelistDialog2" timestamp="1598899859159">
+      <screen x="0" y="27" width="1366" height="705" />
+    </state>
+    <state x="216" y="80" width="1047" height="602" key="CommitChangelistDialog2/0.27.1366.705@0.27.1366.705" timestamp="1598899859159" />
     <state x="175" y="119" key="DiffContextDialog" timestamp="1598463618279">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
@@ -415,54 +422,54 @@
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state x="296" y="118" width="624" height="487" key="FileChooserDialogImpl/0.27.1366.705@0.27.1366.705" timestamp="1598729516027" />
-    <state width="903" height="44" key="GridCell.Tab.0.bottom" timestamp="1598898949401">
+    <state width="903" height="140" key="GridCell.Tab.0.bottom" timestamp="1598986465680">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state width="903" height="44" key="GridCell.Tab.0.bottom/0.27.1366.705@0.27.1366.705" timestamp="1598898949401" />
-    <state width="903" height="44" key="GridCell.Tab.0.center" timestamp="1598898949400">
+    <state width="903" height="140" key="GridCell.Tab.0.bottom/0.27.1366.705@0.27.1366.705" timestamp="1598986465680" />
+    <state width="903" height="140" key="GridCell.Tab.0.center" timestamp="1598986465680">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state width="903" height="44" key="GridCell.Tab.0.center/0.27.1366.705@0.27.1366.705" timestamp="1598898949400" />
-    <state width="903" height="44" key="GridCell.Tab.0.left" timestamp="1598898949400">
+    <state width="903" height="140" key="GridCell.Tab.0.center/0.27.1366.705@0.27.1366.705" timestamp="1598986465680" />
+    <state width="903" height="140" key="GridCell.Tab.0.left" timestamp="1598986465679">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state width="903" height="44" key="GridCell.Tab.0.left/0.27.1366.705@0.27.1366.705" timestamp="1598898949400" />
-    <state width="903" height="44" key="GridCell.Tab.0.right" timestamp="1598898949401">
+    <state width="903" height="140" key="GridCell.Tab.0.left/0.27.1366.705@0.27.1366.705" timestamp="1598986465679" />
+    <state width="903" height="140" key="GridCell.Tab.0.right" timestamp="1598986465680">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state width="903" height="44" key="GridCell.Tab.0.right/0.27.1366.705@0.27.1366.705" timestamp="1598898949401" />
-    <state width="1320" height="100" key="GridCell.Tab.1.bottom" timestamp="1598898935734">
+    <state width="903" height="140" key="GridCell.Tab.0.right/0.27.1366.705@0.27.1366.705" timestamp="1598986465680" />
+    <state width="1320" height="113" key="GridCell.Tab.1.bottom" timestamp="1598986405486">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state width="1320" height="100" key="GridCell.Tab.1.bottom/0.27.1366.705@0.27.1366.705" timestamp="1598898935734" />
-    <state width="1320" height="100" key="GridCell.Tab.1.center" timestamp="1598898935734">
+    <state width="1320" height="113" key="GridCell.Tab.1.bottom/0.27.1366.705@0.27.1366.705" timestamp="1598986405486" />
+    <state width="1320" height="113" key="GridCell.Tab.1.center" timestamp="1598986405485">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state width="1320" height="100" key="GridCell.Tab.1.center/0.27.1366.705@0.27.1366.705" timestamp="1598898935734" />
-    <state width="1320" height="100" key="GridCell.Tab.1.left" timestamp="1598898935733">
+    <state width="1320" height="113" key="GridCell.Tab.1.center/0.27.1366.705@0.27.1366.705" timestamp="1598986405485" />
+    <state width="1320" height="113" key="GridCell.Tab.1.left" timestamp="1598986405484">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state width="1320" height="100" key="GridCell.Tab.1.left/0.27.1366.705@0.27.1366.705" timestamp="1598898935733" />
-    <state width="1320" height="100" key="GridCell.Tab.1.right" timestamp="1598898935734">
+    <state width="1320" height="113" key="GridCell.Tab.1.left/0.27.1366.705@0.27.1366.705" timestamp="1598986405484" />
+    <state width="1320" height="113" key="GridCell.Tab.1.right" timestamp="1598986405485">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state width="1320" height="100" key="GridCell.Tab.1.right/0.27.1366.705@0.27.1366.705" timestamp="1598898935734" />
-    <state width="1320" height="284" key="GridCell.Tab.2.bottom" timestamp="1598898026994">
+    <state width="1320" height="113" key="GridCell.Tab.1.right/0.27.1366.705@0.27.1366.705" timestamp="1598986405485" />
+    <state width="1320" height="150" key="GridCell.Tab.2.bottom" timestamp="1598985516268">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state width="1320" height="284" key="GridCell.Tab.2.bottom/0.27.1366.705@0.27.1366.705" timestamp="1598898026994" />
-    <state width="1320" height="284" key="GridCell.Tab.2.center" timestamp="1598898026993">
+    <state width="1320" height="150" key="GridCell.Tab.2.bottom/0.27.1366.705@0.27.1366.705" timestamp="1598985516268" />
+    <state width="1320" height="150" key="GridCell.Tab.2.center" timestamp="1598985516268">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state width="1320" height="284" key="GridCell.Tab.2.center/0.27.1366.705@0.27.1366.705" timestamp="1598898026993" />
-    <state width="1320" height="284" key="GridCell.Tab.2.left" timestamp="1598898026993">
+    <state width="1320" height="150" key="GridCell.Tab.2.center/0.27.1366.705@0.27.1366.705" timestamp="1598985516268" />
+    <state width="1320" height="150" key="GridCell.Tab.2.left" timestamp="1598985516267">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state width="1320" height="284" key="GridCell.Tab.2.left/0.27.1366.705@0.27.1366.705" timestamp="1598898026993" />
-    <state width="1320" height="284" key="GridCell.Tab.2.right" timestamp="1598898026994">
+    <state width="1320" height="150" key="GridCell.Tab.2.left/0.27.1366.705@0.27.1366.705" timestamp="1598985516267" />
+    <state width="1320" height="150" key="GridCell.Tab.2.right" timestamp="1598985516268">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state width="1320" height="284" key="GridCell.Tab.2.right/0.27.1366.705@0.27.1366.705" timestamp="1598898026994" />
+    <state width="1320" height="150" key="GridCell.Tab.2.right/0.27.1366.705@0.27.1366.705" timestamp="1598985516268" />
     <state width="235" height="500" key="HiddenNamespacesPopup" timestamp="1595076191754">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
@@ -479,10 +486,10 @@
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state x="412" y="114" width="540" height="524" key="StructurePopup/0.27.1366.705@0.27.1366.705" timestamp="1598119345881" />
-    <state x="321" y="152" width="808" height="531" key="Vcs.Push.Dialog.v2" timestamp="1598811954528">
+    <state x="321" y="152" width="808" height="531" key="Vcs.Push.Dialog.v2" timestamp="1598899891273">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state x="321" y="152" width="808" height="531" key="Vcs.Push.Dialog.v2/0.27.1366.705@0.27.1366.705" timestamp="1598811954528" />
+    <state x="321" y="152" width="808" height="531" key="Vcs.Push.Dialog.v2/0.27.1366.705@0.27.1366.705" timestamp="1598899891273" />
     <state x="565" y="267" width="336" height="274" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1598120256835">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
@@ -563,23 +570,24 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/backend/src/main/java/com/buulean/backend/dbInfiller/SQLDataCreater.java</url>
-          <line>19</line>
+          <line>18</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/backend/src/main/java/com/buulean/backend/dbInfiller/SQLDataCreater.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="25" />
+          <line>50</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/backend/src/main/java/com/buulean/backend/dbInfiller/SQLDataCreater.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="26" />
+          <line>51</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NullPointerException" package="java.lang" />
-          <option name="timeStamp" value="21" />
-        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/buulean/backend/dbInfiller/SQLDataCreater.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>

@@ -6,7 +6,6 @@ import java.util.List;
 
 public class SQLDataCreater {
 
-    long ownerIdStatic = 0;
     String LINK_TO_FILE = "/home/roman/IT/Aplication/01_ Community_System/Community_System/backend/src/main/resources/communityData/wilenska03.csv";
     Loader loader = new Loader();
     List<List<String>> data = loader.loadFile(LINK_TO_FILE);
@@ -20,10 +19,9 @@ public class SQLDataCreater {
 
 
     public String createrOwnersForSQL(List<List<String>> data) {
-
         StringBuilder result = new StringBuilder();
         long ownerId = 0;
-        StringBuilder tempownerData = new StringBuilder();
+        StringBuilder tempOwnerData = new StringBuilder();
         for (List<String> ownerInfo : data) {
             StringBuilder ownerData = new StringBuilder();
             String[] ownerDetail = ownerInfo.get(0).split(" ");
@@ -36,11 +34,10 @@ public class SQLDataCreater {
                     .append("'").append(", ")
                     .append("' '")
                     .append("),\n");
-            if (!tempownerData.toString().equals(ownerData.toString())) {
+            if (!tempOwnerData.toString().equals(ownerData.toString())) {
                 result.append(ownerData);
-                tempownerData = ownerData;
+                tempOwnerData = ownerData;
                 ownerId++;
-                ownerIdStatic++;
             }
             createProperties(ownerInfo, ownerId);
         }
@@ -48,6 +45,48 @@ public class SQLDataCreater {
     }
 
     private void createProperties(List<String> ownerInfo, long ownerId) {
-        propertiesForSQL = propertiesForSQL + ownerInfo.get(1) + ownerInfo.get(2);
+
+        StringBuilder result = new StringBuilder();
+
+        String numberOfproperties = ownerInfo.get(1).split("/")[1];
+        String participation = ownerInfo.get(2);
+        String typeOfProperties = "";
+        Integer level = null;
+        Integer area = null;
+        if (Character.isLetter(numberOfproperties.charAt(0))) {
+            if (Character.toString(numberOfproperties.charAt(0)).equals("G")) {
+                typeOfProperties = "garage";
+                level = -1;
+            } else if (Character.toString(numberOfproperties.charAt(0)).equals("M")) {
+                typeOfProperties = "garage";
+                level = 0;
+            }
+        } else {
+            typeOfProperties = "apartment";
+        }
+        ;
+
+        result.append("(").append(ownerId)
+                .append(", '")
+                .append(typeOfProperties)
+                .append("', '")
+                .append(numberOfproperties)
+                .append("', ")
+                .append(area)
+                .append(", ")
+                .append(level)
+                .append(", ")
+                .append(participation)
+                .append("),\n");
+
+        propertiesForSQL = propertiesForSQL + result.toString();
+
+
+//        (1,'apartment', 'm27', 60.21, 5, 6400),
+//        SZKLARZ ADAM,WILEŃSKA 5/16,6225,/,631842
+//        ROCHOWIAK BARBARA ROCHOWIAK FRANCISZEK,WILEŃSKA 5/17,10334,/,631842
+//        ROCHOWIAK BARBARA ROCHOWIAK FRANCISZEK,WILEŃSKA 5/G21,2442,/,631842
+//        MAGDZIARZ ANETA MAGDZIARZ ADAM,WILEŃSKA 5/18,8032,/,631842
+
     }
 }
