@@ -25,15 +25,11 @@ public class SQLDataCreater {
         for (List<String> ownerInfo : data) {
             StringBuilder ownerData = new StringBuilder();
             String[] ownerDetail = ownerInfo.get(0).split(" ");
-            ownerData.append("(")
-                    .append("'")
+            ownerData.append("('")
                     .append(ownerDetail[1])
-                    .append("'").append(", ")
-                    .append("'")
+                    .append("', '")
                     .append(ownerDetail[0])
-                    .append("'").append(", ")
-                    .append("' '")
-                    .append("),\n");
+                    .append("', ' '),\n");
             if (!tempOwnerData.toString().equals(ownerData.toString())) {
                 result.append(ownerData);
                 tempOwnerData = ownerData;
@@ -63,8 +59,34 @@ public class SQLDataCreater {
             }
         } else {
             typeOfProperties = "apartment";
+            if (numberOfproperties.equals("69A")) {
+                level = 11;
+            } else if (numberOfproperties.equals("65A")) {
+                level = 10;
+            } else if (Integer.parseInt(numberOfproperties) >= 67) {
+                level = 11;
+            } else if (Integer.parseInt(numberOfproperties) >= 63 && Integer.parseInt(numberOfproperties) <= 66) {
+                level = 10;
+            } else if (Integer.parseInt(numberOfproperties) >= 62 && Integer.parseInt(numberOfproperties) <= 56) {
+                level = 9;
+            } else if (Integer.parseInt(numberOfproperties) >= 49 && Integer.parseInt(numberOfproperties) <= 55) {
+                level = 8;
+            } else if (Integer.parseInt(numberOfproperties) >= 42 && Integer.parseInt(numberOfproperties) <= 48) {
+                level = 7;
+            } else if (Integer.parseInt(numberOfproperties) >= 35 && Integer.parseInt(numberOfproperties) <= 41) {
+                level = 6;
+            } else if (Integer.parseInt(numberOfproperties) >= 28 && Integer.parseInt(numberOfproperties) <= 34) {
+                level = 5;
+            } else if (Integer.parseInt(numberOfproperties) >= 21 && Integer.parseInt(numberOfproperties) <= 27) {
+                level = 4;
+            } else if (Integer.parseInt(numberOfproperties) >= 14 && Integer.parseInt(numberOfproperties) <= 20) {
+                level = 3;
+            } else if (Integer.parseInt(numberOfproperties) >= 7 && Integer.parseInt(numberOfproperties) <= 13) {
+                level = 2;
+            } else if (Integer.parseInt(numberOfproperties) >= 1 && Integer.parseInt(numberOfproperties) <= 6) {
+                level = 1;
+            }
         }
-        ;
 
         result.append("(").append(ownerId)
                 .append(", '")
@@ -80,7 +102,6 @@ public class SQLDataCreater {
                 .append("),\n");
 
         propertiesForSQL = propertiesForSQL + result.toString();
-
 
 //        (1,'apartment', 'm27', 60.21, 5, 6400),
 //        SZKLARZ ADAM,WILEŃSKA 5/16,6225,/,631842

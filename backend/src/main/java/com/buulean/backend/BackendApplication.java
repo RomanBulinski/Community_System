@@ -10,7 +10,7 @@ public class BackendApplication {
     public static void main(String[] args) {
 
         SpringApplication.run(BackendApplication.class, args);
-//        SQLDataCreater dbCreater = new SQLDataCreater();
+        SQLDataCreater dbCreater = new SQLDataCreater();
 
     }
 }
