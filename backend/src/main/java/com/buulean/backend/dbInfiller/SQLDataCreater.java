@@ -9,16 +9,20 @@ public class SQLDataCreater {
     String LINK_TO_FILE = "/home/roman/IT/Aplication/01_ Community_System/Community_System/backend/src/main/resources/communityData/wilenska03.csv";
     Loader loader = new Loader();
     List<List<String>> data = loader.loadFile(LINK_TO_FILE);
+    String ownersForSQL = "";
     String propertiesForSQL = "";
+
 
     public SQLDataCreater() {
         System.out.println(data);
-        System.out.println(createrOwnersForSQL(data));
+        createrOwnersForSQL(data);
+        System.out.println(ownersForSQL);
         System.out.println(propertiesForSQL);
     }
 
 
-    public String createrOwnersForSQL(List<List<String>> data) {
+    public void createrOwnersForSQL(List<List<String>> data) {
+
         StringBuilder result = new StringBuilder();
         long ownerId = 0;
         StringBuilder tempOwnerData = new StringBuilder();
@@ -37,7 +41,7 @@ public class SQLDataCreater {
             }
             createProperties(ownerInfo, ownerId);
         }
-        return result.deleteCharAt(result.length() - 1).deleteCharAt(result.length() - 1).append(";").toString();
+        ownersForSQL = result.deleteCharAt(result.length() - 1).deleteCharAt(result.length() - 1).append(";").toString();
     }
 
     private void createProperties(List<String> ownerInfo, long ownerId) {
@@ -67,7 +71,7 @@ public class SQLDataCreater {
                 level = 11;
             } else if (Integer.parseInt(numberOfproperties) >= 63 && Integer.parseInt(numberOfproperties) <= 66) {
                 level = 10;
-            } else if (Integer.parseInt(numberOfproperties) >= 62 && Integer.parseInt(numberOfproperties) <= 56) {
+            } else if (Integer.parseInt(numberOfproperties) >= 56 && Integer.parseInt(numberOfproperties) <= 62) {
                 level = 9;
             } else if (Integer.parseInt(numberOfproperties) >= 49 && Integer.parseInt(numberOfproperties) <= 55) {
                 level = 8;
