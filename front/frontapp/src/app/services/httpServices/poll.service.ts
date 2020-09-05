@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {PollDTO} from "../common/PollDTO";
+import {PollDTO} from "../../common/PollDTO";
 
 
 @Injectable({

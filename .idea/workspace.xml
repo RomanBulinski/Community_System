@@ -23,8 +23,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dea8ce38-36ae-46a8-b894-92f6c1a2366b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/front/frontapp/src/app/services/httpServices/property.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/buulean/backend/dbInfiller/SQLDataCreater.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/buulean/backend/dbInfiller/SQLDataCreater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/buulean/backend/BackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/buulean/backend/BackendApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/components/owner-form/owner-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/components/owner-form/owner-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/components/owner-modify/owner-modify.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/components/owner-modify/owner-modify.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/pages/documents/documents.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/documents/documents.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/pages/owners/owners.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/owners/owners.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/pages/polls/polls.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/polls/polls.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/pages/properties/properties.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/properties/properties.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/pages/properties/properties.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/properties/properties.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/pages/resolutions/resolutions.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/resolutions/resolutions.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/pages/voting-form/voting-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/pages/voting-form/voting-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/services/document.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/services/httpServices/document.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/services/owner.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/services/httpServices/owner.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/services/poll.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/services/httpServices/poll.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/services/property.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/frontapp/src/app/services/resolution.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontapp/src/app/services/httpServices/resolution.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +99,9 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/front/frontapp/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front/frontapp/src/app/services/httpServices" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.buulean.backend" />
     </key>
@@ -93,7 +113,7 @@
       <recent name="C:\Users\rbulinsk\MojeKody\Aplication\01_ Community_System\Community_System\front\frontapp\src\app" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BackendApplication">
+  <component name="RunManager" selected="npm.Angular CLI Server (frontapp)">
     <configuration name="E2E Tests (frontapp)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/front/frontapp/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
@@ -248,7 +268,11 @@
       <workItem from="1598981759008" duration="6633000" />
       <workItem from="1599060404423" duration="3127000" />
       <workItem from="1599070013052" duration="1970000" />
-      <workItem from="1599147552615" duration="1117000" />
+      <workItem from="1599147552615" duration="6740000" />
+      <workItem from="1599241022243" duration="3217000" />
+      <workItem from="1599281506861" duration="4998000" />
+      <workItem from="1599294809271" duration="3173000" />
+      <workItem from="1599318395259" duration="2001000" />
     </task>
     <task id="LOCAL-00001" summary="Copy backend file fro previous app">
       <created>1584191122973</created>
@@ -362,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599071220051</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Improve SQL queries">
+      <created>1599148702780</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1599148702780</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +428,8 @@
     <MESSAGE value="Prepared data for SQL queries for properties" />
     <MESSAGE value="Prepared data for SQL queries for properties - refactor type of variables" />
     <MESSAGE value="Improve DB infill process" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improve DB infill process" />
+    <MESSAGE value="Improve SQL queries" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve SQL queries" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -425,10 +457,10 @@
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state x="709" y="387" width="482" height="345" key="#xdebugger.evaluate/0.27.1366.705@0.27.1366.705" timestamp="1598982555117" />
-    <state x="216" y="80" width="1047" height="625" key="CommitChangelistDialog2" timestamp="1599071219330">
+    <state x="216" y="80" width="1047" height="625" key="CommitChangelistDialog2" timestamp="1599148702479">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state x="216" y="80" width="1047" height="625" key="CommitChangelistDialog2/0.27.1366.705@0.27.1366.705" timestamp="1599071219330" />
+    <state x="216" y="80" width="1047" height="625" key="CommitChangelistDialog2/0.27.1366.705@0.27.1366.705" timestamp="1599148702479" />
     <state x="175" y="119" key="DiffContextDialog" timestamp="1598463618279">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
@@ -437,38 +469,38 @@
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state x="296" y="118" width="624" height="487" key="FileChooserDialogImpl/0.27.1366.705@0.27.1366.705" timestamp="1598729516027" />
-    <state width="1320" height="2" key="GridCell.Tab.0.bottom" timestamp="1599148430679">
+    <state width="1320" height="121" key="GridCell.Tab.0.bottom" timestamp="1599321298296">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state width="1320" height="2" key="GridCell.Tab.0.bottom/0.27.1366.705@0.27.1366.705" timestamp="1599148430679" />
-    <state width="1320" height="2" key="GridCell.Tab.0.center" timestamp="1599148430678">
+    <state width="1320" height="121" key="GridCell.Tab.0.bottom/0.27.1366.705@0.27.1366.705" timestamp="1599321298296" />
+    <state width="1320" height="121" key="GridCell.Tab.0.center" timestamp="1599321298295">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state width="1320" height="2" key="GridCell.Tab.0.center/0.27.1366.705@0.27.1366.705" timestamp="1599148430678" />
-    <state width="1320" height="2" key="GridCell.Tab.0.left" timestamp="1599148430677">
+    <state width="1320" height="121" key="GridCell.Tab.0.center/0.27.1366.705@0.27.1366.705" timestamp="1599321298295" />
+    <state width="1320" height="121" key="GridCell.Tab.0.left" timestamp="1599321298294">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state width="1320" height="2" key="GridCell.Tab.0.left/0.27.1366.705@0.27.1366.705" timestamp="1599148430677" />
-    <state width="1320" height="2" key="GridCell.Tab.0.right" timestamp="1599148430678">
+    <state width="1320" height="121" key="GridCell.Tab.0.left/0.27.1366.705@0.27.1366.705" timestamp="1599321298294" />
+    <state width="1320" height="121" key="GridCell.Tab.0.right" timestamp="1599321298295">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state width="1320" height="2" key="GridCell.Tab.0.right/0.27.1366.705@0.27.1366.705" timestamp="1599148430678" />
-    <state width="1320" height="2" key="GridCell.Tab.1.bottom" timestamp="1599148430683">
+    <state width="1320" height="121" key="GridCell.Tab.0.right/0.27.1366.705@0.27.1366.705" timestamp="1599321298295" />
+    <state width="1320" height="178" key="GridCell.Tab.1.bottom" timestamp="1599151139740">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state width="1320" height="2" key="GridCell.Tab.1.bottom/0.27.1366.705@0.27.1366.705" timestamp="1599148430683" />
-    <state width="1320" height="2" key="GridCell.Tab.1.center" timestamp="1599148430681">
+    <state width="1320" height="178" key="GridCell.Tab.1.bottom/0.27.1366.705@0.27.1366.705" timestamp="1599151139740" />
+    <state width="1320" height="178" key="GridCell.Tab.1.center" timestamp="1599151139739">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state width="1320" height="2" key="GridCell.Tab.1.center/0.27.1366.705@0.27.1366.705" timestamp="1599148430681" />
-    <state width="1320" height="2" key="GridCell.Tab.1.left" timestamp="1599148430680">
+    <state width="1320" height="178" key="GridCell.Tab.1.center/0.27.1366.705@0.27.1366.705" timestamp="1599151139739" />
+    <state width="1320" height="178" key="GridCell.Tab.1.left" timestamp="1599151139739">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state width="1320" height="2" key="GridCell.Tab.1.left/0.27.1366.705@0.27.1366.705" timestamp="1599148430680" />
-    <state width="1320" height="2" key="GridCell.Tab.1.right" timestamp="1599148430682">
+    <state width="1320" height="178" key="GridCell.Tab.1.left/0.27.1366.705@0.27.1366.705" timestamp="1599151139739" />
+    <state width="1320" height="178" key="GridCell.Tab.1.right" timestamp="1599151139740">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state width="1320" height="2" key="GridCell.Tab.1.right/0.27.1366.705@0.27.1366.705" timestamp="1599148430682" />
+    <state width="1320" height="178" key="GridCell.Tab.1.right/0.27.1366.705@0.27.1366.705" timestamp="1599151139740" />
     <state width="1320" height="280" key="GridCell.Tab.2.bottom" timestamp="1598988424206">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
@@ -549,10 +581,10 @@
       <screen x="0" y="27" width="1366" height="705" />
     </state>
     <state x="267" y="36" key="editAsTableFormatDialogDimension/0.27.1366.705@0.27.1366.705" timestamp="1598729104310" />
-    <state x="101" y="109" width="993" height="522" key="find.popup" timestamp="1598810544909">
+    <state x="101" y="109" width="993" height="522" key="find.popup" timestamp="1599320973030">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
-    <state x="101" y="109" width="993" height="522" key="find.popup/0.27.1366.705@0.27.1366.705" timestamp="1598810544909" />
+    <state x="101" y="109" width="993" height="522" key="find.popup/0.27.1366.705@0.27.1366.705" timestamp="1599320973030" />
     <state x="59" y="82" key="new project wizard" timestamp="1598465494783">
       <screen x="0" y="27" width="1366" height="705" />
     </state>
@@ -571,7 +603,7 @@
       <breakpoints>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/front/frontapp/src/app/pages/properties/properties.component.ts</url>
-          <line>23</line>
+          <line>30</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint type="javascript">

@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {OwnerService} from '../../services/owner.service';
+import {OwnerService} from '../../services/httpServices/owner.service';
 import {OwnerDTO} from "../../common/OwnerDTO";
 
 

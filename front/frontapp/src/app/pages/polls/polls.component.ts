@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-import {PropertyService} from '../../services/property.service';
-import {PollService} from 'src/app/services/poll.service';
-import {OwnerService} from '../../services/owner.service';
+import {PropertyService} from '../../services/httpServices/property.service';
+import {PollService} from 'src/app/services/httpServices/poll.service';
+import {OwnerService} from '../../services/httpServices/owner.service';
 import {PollOnFront} from "../../common/PollOnFront";
 import {OwnerDTO} from "../../common/OwnerDTO";
 import {PollDTO} from "../../common/PollDTO";

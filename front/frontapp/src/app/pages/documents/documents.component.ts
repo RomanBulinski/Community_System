@@ -1,17 +1,17 @@
 import {Component, OnInit} from '@angular/core';
 import {OwnerDTO} from "../../common/OwnerDTO";
-import {OwnerService} from "../../services/owner.service";
-import {DocumentService} from "../../services/document.service";
+import {OwnerService} from "../../services/httpServices/owner.service";
+import {DocumentService} from "../../services/httpServices/document.service";
 import {DocumentDTO} from "../../common/DocumentDTO";
 
 @Component({
-  selector: 'app-documents',
-  templateUrl: './documents.component.html',
-  styleUrls: ['./documents.component.scss']
+    selector: 'app-documents',
+    templateUrl: './documents.component.html',
+    styleUrls: ['./documents.component.scss']
 })
 export class DocumentsComponent implements OnInit {
 
-  documents: DocumentDTO[];
+    documents: DocumentDTO[];
   fileData: string;
 
   selectedFile: File;

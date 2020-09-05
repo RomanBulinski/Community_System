@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Output} from '@angular/core';
-import { Router} from '@angular/router';
-import {OwnerService} from '../../services/owner.service';
+import {Router} from '@angular/router';
+import {OwnerService} from '../../services/httpServices/owner.service';
 import {OwnerDTO} from "../../common/OwnerDTO";
 
 @Component({

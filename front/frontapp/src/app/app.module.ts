@@ -5,7 +5,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {OwnersComponent} from './pages/owners/owners.component';
 import {HttpClientModule} from '@angular/common/http';
-import {OwnerService} from './services/owner.service';
+import {OwnerService} from './services/httpServices/owner.service';
 
 import {OwnerFormComponent} from './components/owner-form/owner-form.component';
 import {FormsModule} from '@angular/forms';
@@ -28,6 +28,7 @@ import {MatSelectModule} from "@angular/material/select";
 import {MatInputModule} from '@angular//material/input';
 import {AngularFileUploaderModule} from "angular-file-uploader";
 import {DocumentsComponent} from './pages/documents/documents.component';
+import {NotificationDialogComponent} from './Utils/notyficationDialog/notification-dialog.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import {DocumentsComponent} from './pages/documents/documents.component';
     VotingFormComponent,
     OwnerModifyComponent,
     YesNoFormComponent,
-    DocumentsComponent
+    DocumentsComponent,
+    NotificationDialogComponent
   ],
   imports: [
     BrowserModule,

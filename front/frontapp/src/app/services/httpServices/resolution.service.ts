@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
-import {ResolutionDTO} from "../common/ResolutionDTO";
+import {ResolutionDTO} from "../../common/ResolutionDTO";
 
 
 const httpOptions = {

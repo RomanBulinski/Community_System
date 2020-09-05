@@ -1,8 +1,15 @@
 <h2> Properties / Własność / Nierychomość </h2>
+
+<div *ngFor="let item of results | async">
+  <div>
+    {{item.type}}
+  </div>
+</div>
+
 <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
   <!-- Position Column -->
   <ng-container matColumnDef="id">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header> id </th>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> id</th>
     <td mat-cell *matCellDef="let element"> {{element.id}} </td>
   </ng-container>
 

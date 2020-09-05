@@ -1,6 +1,6 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-import {OwnerService} from '../../services/owner.service';
+import {OwnerService} from '../../services/httpServices/owner.service';
 import {MatDialog} from '@angular/material/dialog';
 import {YesNoFormComponent} from "../../components/yes-no-form/yes-no-form.component";
 import {OwnerDTO} from "../../common/OwnerDTO";

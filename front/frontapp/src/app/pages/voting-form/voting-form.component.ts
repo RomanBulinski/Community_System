@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-import {PollService} from '../../services/poll.service';
-import {PropertyService} from '../../services/property.service';
+import {PollService} from '../../services/httpServices/poll.service';
+import {PropertyService} from '../../services/httpServices/property.service';
 import {ActivatedRoute} from '@angular/router';
-import {ResolutionService} from '../../services/resolution.service';
+import {ResolutionService} from '../../services/httpServices/resolution.service';
 import {PollDTO} from "../../common/PollDTO";
 import {PropertyDTO} from "../../common/PropertyDTO";
 import {ResolutionDTO} from "../../common/ResolutionDTO";

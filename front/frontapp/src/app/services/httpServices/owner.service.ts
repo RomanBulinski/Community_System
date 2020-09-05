@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
-import {OwnerDTO} from "../common/OwnerDTO";
+import {OwnerDTO} from "../../common/OwnerDTO";
 import {Observable} from "rxjs";
 
 const httpOptions = {
