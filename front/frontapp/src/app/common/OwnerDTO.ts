@@ -3,5 +3,6 @@ export class OwnerDTO {
   name: string;
   surname: string;
   email: string;
+
 }
 

@@ -20,7 +20,7 @@ export class PropertiesComponent implements OnInit {
   dataSource: MatTableDataSource<PropertyDTO>;
   @ViewChild(MatSort, {static: true}) sort: MatSort;
 
-  private results: Observable<PropertyDTO[]>;
+  private resultsFromDB: Observable<PropertyDTO[]>;
 
   constructor(private router: Router,
               private propertyService: PropertyService,
@@ -35,14 +35,17 @@ export class PropertiesComponent implements OnInit {
     //     this.dataSource.sort = this.sort;
     //   });
 
-    this.propertyService.getProperties().subscribe(async data => {
+    this.propertyService.getProperties().subscribe(
+      data => {
         this.dataSource = new MatTableDataSource(data);
         this.dataSource.sort = this.sort;
+        this.notificationService.success("Załądowano dane z bazy danaych");
       },
-      err => this.notificationService.error(err),);
+      error => this.notificationService.error(error),
+    );
 
     //odbieram observable i na nim pracuje w html
-    this.results = this.propertyService.getProperties();
+    this.resultsFromDB = this.propertyService.getProperties();
 
   }
 
